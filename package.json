@@ -1,0 +1,26 @@
+{
+  "name": "andreubemo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "chroma-js": "^2.4.2",
+    "colorbrewer": "^1.5.3",
+    "firebase": "^9.18.0",
+    "js-cookie": "^3.0.1",
+    "pdfjs-dist": "^3.4.120",
+    "vanilla-tilt": "^1.8.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.0"
+  }
+}

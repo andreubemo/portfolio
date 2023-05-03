@@ -1,0 +1,70 @@
+{
+    "logotipos": [
+        {
+        "id": 1,
+        "src": "src/assets/img/logotipos/logo_calateresina.png",
+        "titulo": "Ca la Teresina",
+        "descripcion": "Ca la Teresina es una carnicería de toda la vida del barrio. Su producto es de muy alta calidad y el trato con el cliente uno de sus valores más reconocidos. Cuando me encargaron el rediseño del logotipo querian conservar la esencia de su imagen, identificativa desde hace muchos años, pero a la vez darle un aspecto más limpio y actual. ¡Este fue el resultado!",
+        "likes": 0,
+        "ano": 2018,
+        "mockup": "src/assets/img/mockup-portatil/bolsas-calateresina_mockup.jpg"
+        },
+        {
+        "id": 2,
+        "src": "src/assets/img/logotipos/logo-vientons.png",
+        "titulo": "Viento Norte Sur",
+        "descripcion": "Viento Norte Sur es una asociacion que organiza viajes de turismo responsable donde combina la experiencia del usuario y la actividad solidaria que precise el lugar. Trabajé con ellos en muchos aspectos y uno de ellos fue en renovar el logotipo.",
+        "likes": 0,
+        "ano": 2018,
+        "mockup": "src/assets/img/mockup-portatil/vientons-mockup-macbook.png",
+        "libro": "src/assets/img/libros-estilo/libro-estilo-vientons.pdf"
+        },
+        {
+        "id": 3,
+        "src": "src/assets/img/logotipos/logo_femdtot.png",
+        "titulo": "Fem Dtot",
+        "descripcion": "Fem Dtot es una carpintería multiservicios de la Garriga, empresa que antiguamente fue solo carpintería. Quisieron renovar su imagen corporativa y uno de los cambios fue tratar el logotipo como una firma, un sello el cual dejar después de cada trabajo.",
+        "likes": 0,
+        "ano": 2018,
+        "mockup": "src/assets/img/mockup-portatil/dtot-serveis-mockup.png",
+        "libro": "src/assets/img/libros-estilo/libro-estilo_femdtot.pdf"
+        },
+        {
+        "id": 4,
+        "src": "src/assets/img/logotipos/logo-camper-wow.png",
+        "titulo": "CamperWow",
+        "descripcion": "CamperWow nace de un hobbie, de una afición más allá de la remuneración o el reconocimiento. Son una pareja que camperiza furgonetas combinando su estilo propio con un diseño a media del cliente. Utilizan materiales reciclados, materiales naturales y mucho cariño. No podría haber trabajado este logotipo de otra manera que no fuera un lettering.",
+        "likes": 0,
+        "ano": 2019,
+        "mockup": "src/assets/img/mockup-portatil/camperwow-mockup.png"
+        },
+        {
+        "id": 5,
+        "src": "src/assets/img/logotipos/logo-llar-vital.png",
+        "titulo": "LlarVital",
+        "descripcion": "LlarVital es una empresa dedicada a la salud y el bienestar de las personas especializada en el tratamiento de magnetoterapia y presoterapia a domicilio. Una empresa con valores como la salud, el cuidado de las personas y el hogar.",
+        "likes": 0,
+        "ano": 2021,
+        "mockup": "src/assets/img/mockup-portatil/llar-vital-mockup.png"
+        },
+        {
+        "id": 6,
+        "src": "src/assets/img/logotipos/logo-carlesoro-electricitat.png",
+        "titulo": "CarleSoro electricitat",
+        "descripcion": "Autónomo que emprende su carrera en solitario. Su nombre, su apellido y a lo que se dedica. Una solución old-school, pero para su target, una solución eficaz.",
+        "likes": 0,
+        "ano": 2022,
+        "mockup": "src/assets/img/mockup-portatil/carlesoro-mockup.png"
+        },
+        {
+        "id": 7,
+        "src": "src/assets/img/logotipos/logo-polepole.png",
+        "titulo": "Polepole",
+        "descripcion": "Polepoel es una marca de ropa para bebes handmade, con una filosofía africana llamada 'pole pole', que tiene que ver con un ritmo de vida pausado, totalmente contrario al ritmo de vida frenético de occidente. En el imagotipo encontramos una mezcla de felicidad infantil, un animal que representa la filosofía de la marca que es la tortuga y el ovillo, material básico en el producto final.",
+        "likes": 0,
+        "ano": 2023,
+        "mockup": "src/assets/img/mockup-portatil/polopole-mockup.png",
+        "libro": "src/assets/img/libros-estilo/libro-estilo-polepole.pdf"
+        }
+    ]
+}
