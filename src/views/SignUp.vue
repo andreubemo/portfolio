@@ -77,7 +77,7 @@ function submitForm() {
                     <p>LinkedIn</p>
                 </li>
                 <li>
-                    <a href="https://github.com/andreubemo" target="_blank"><img src="@/assets/img/github.png"
+                    <a href="https://github.com/andreubemo/portfolio/tree/master" target="_blank"><img src="@/assets/img/github.png"
                             alt="github"></a>
                     <p>GitHub</p>
                 </li>
