@@ -1,24 +1,26 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-    <div class="container">
-        <span> ©2023 AndreuBemo | Proyecto creado con Vue.js y Vite</span>
-    </div>
+  <div class="container">
+    <span> ©2023 AndreuBemo | Proyecto creado con Vue.js y Vite</span>
+  </div>
 </template>
 
 <style scoped>
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 45px;
-    background: #262626;
-    color: #737373;
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+  background: #fff;
+  color: #403833;
 }
-span{
-    text-align: center;
-    font-size: 11px;
+.container span {
+  width: 90%;
+  background: #f1ff00;
+  padding-top: 15px;
+  font-size: 11px;
+  font-weight: 575;
 }
 </style>

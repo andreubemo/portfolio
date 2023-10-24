@@ -1,397 +1,307 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import { useRoute } from 'vue-router'
-import { createRouter, createWebHistory } from 'vue-router'
-import SelectorRange from '@/views/SelectorRange.vue'
-import SignUp from '@/views/SignUp.vue'
-import Portfolio from '@/views/Portfolio.vue'
-import AbLogo from '@/components/AbLogo.vue'
+import { ref, onUnmounted } from "vue";
+import { useRoute } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import SelectorRange from "@/views/SelectorRange.vue";
+import SignUp from "@/views/SignUp.vue";
+import Portfolio from "@/views/Portfolio.vue";
+import AbLogo from "@/components/AbLogo.vue";
 
 const routes = [
-    {
-        path: '/',
-        name: 'cvDinamico',
-        component: SelectorRange,
-        default: true
-    },
-    {
-        path: '/signup',
-        name: 'signup',
-        component: SignUp
-    },
-    {
-        path: '/portfolio',
-        name: 'portfolio',
-        component: Portfolio
-    },
-]
+  {
+    path: "/",
+    name: "Currículum",
+    component: SelectorRange,
+    default: true,
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: SignUp,
+  },
+  {
+    path: "/portfolio",
+    name: "portfolio",
+    component: Portfolio,
+  },
+];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes,
-})
+  history: createWebHistory(),
+  routes,
+});
 
-const isScrolled = ref(false)
-const showMenu = ref(false)
+const isScrolled = ref(false);
+const showMenu = ref(false);
 
 const links = ref([
-    { path: '/', text: 'CV Dinámico' },
-    { path: '/portfolio', text: 'Portfolio' },
-    { path: '/signup', text: 'Contacto' },
-])
-
+  { path: "/", text: "currículum" },
+  { path: "/portfolio", text: "portfolio" },
+  { path: "/signup", text: "contacto" },
+]);
 
 //EFECTO NAVEGADOR
-el: '#nav';
+el: "#nav";
 const onScroll = (event) => {
-    const scrollPosition = event.target.scrollingElement.scrollTop;
-    if (scrollPosition > 10) {
-        if (!nav.classList.contains("scrolled-down")) {
-            nav.classList.add("scrolled-down");
-        }
-    } else {
-        if (nav.classList.contains("scrolled-down")) {
-            nav.classList.remove("scrolled-down");
-        }
+  const scrollPosition = event.target.scrollingElement.scrollTop;
+  if (scrollPosition > 10) {
+    if (!nav.classList.contains("scrolled-down")) {
+      nav.classList.add("scrolled-down");
     }
+  } else {
+    if (nav.classList.contains("scrolled-down")) {
+      nav.classList.remove("scrolled-down");
+    }
+  }
 };
 document.addEventListener("scroll", onScroll);
 
 //RESPONSIVE
 const toggleMenu = () => {
-    showMenu.value = !showMenu.value
-}
+  showMenu.value = !showMenu.value;
+};
 
 const closeMenu = () => {
-    showMenu.value = false
-}
+  showMenu.value = false;
+};
 
-const route = useRoute()
+const route = useRoute();
 
 // Función para detectar si el usuario ha hecho scroll
 const handleScroll = () => {
-    isScrolled.value = window.pageYOffset > 0
-}
+  isScrolled.value = window.pageYOffset > 0;
+};
 
 // Event listeners
-window.addEventListener('scroll', handleScroll)
+window.addEventListener("scroll", handleScroll);
 
 // Se elimina el event listener al destruir el componente
 onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-})
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
-    <nav :class="{ 'scrolled-down': isScrolled }" id="nav">
-        <div class="container">
-            <router-link :to="'/'">
-                <AbLogo />
-            </router-link>
-            <div class="menu">
-                <ul class="lista-menu" :class="{ 'show-menu': showMenu }">
-                    <li v-for="link in links" :key="link.path">
-                        <router-link :to="link.path" class="a" exact-active-class="link-active" @click="closeMenu">
-                            {{ link.text }}
-                        </router-link>
-                    </li>
-                </ul>
-                <button class="menu-icon" @click="toggleMenu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
+  <nav :class="{ 'scrolled-down': isScrolled }" id="nav">
+    <div class="container">
+      <router-link class="logo" :to="'/'">
+        <AbLogo />
+      </router-link>
+      <ul class="lista-menu" :class="{ 'show-menu': showMenu }">
+        <li v-for="link in links" :key="link.path">
+          <router-link
+            :to="link.path"
+            class="a"
+            exact-active-class="link-active"
+            @click="closeMenu"
+          >
+            <p>{{ link.text }}</p>
+          </router-link>
+        </li>
+      </ul>
+      <a class="menu-icon" @click="toggleMenu">
+        <i :class="showMenu ? 'fas fa-times' : 'fas fa-bars'"></i>
+      </a>
+    </div>
+  </nav>
 </template>
 
 <style scoped>
 .container {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 55px;
-    margin: 0px;
-    padding: 0px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin: 0px;
+  padding: 0px 0px;
 }
-
-.menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding: 15px 0px;
-}
-
-ul {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 29px;
-}
-
-li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    text-align: center;
-}
-
 .logo {
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 0.62rem;
-    letter-spacing: 0.06rem;
-    margin-left: 15px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lista-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+  width: 500px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+li {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 
-.a {
-    color: #737373;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0px;
+.a p {
+  width: 200px;
+  color: #403833;
+  padding-top: 15px;
+  transition: all 0.5s;
 }
 
-.a:hover {
-    color: #F26241;
-    margin: 0px;
+.a:hover p {
+  width: 200px;
+  background: #f1ff0050;
+  color: #403833;
+  padding-top: 15px;
+  margin: 0px;
 }
 
-.link-active {
-    color: #F26241;
-    border: 1px solid #F26241;
-    border-radius: 5px;
-    padding: 11px 15px;
-    margin: 0px;
+.link-active p {
+  width: 200px;
+  background: #f1ff00;
+  color: #403833;
+  font-weight: 575;
+  padding-top: 15px;
+  margin: 0px;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: 62px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #262626;
-    transition: 0.6s;
-    padding: 20px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+  transition: 0.6s;
+  padding: 20px 0px;
 }
 
 nav.scrolled-down {
-    height: 62px;
-    box-shadow: 0px -5px 16px #262620;
+  height: 70px;
+  box-shadow: 0px -25px 45px 10px #bfbdba;
 }
-
-nav.scrolled-down img {
-    scale: 1.06;
-}
-
-nav img {
-    height: 38px;
-    transform-origin: 0% 50%;
-    transition: 0.3s;
-}
-
 
 @media only screen and (max-width: 768px) {
-    .container {
-        padding: 0 5%;
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .lista-menu {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding-bottom: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    animation: menu 0.3s ease-in-out forwards;
+  }
+
+  .lista-menu.show-menu {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding-bottom: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    animation: menu 0.3s ease-in-out forwards;
+  }
+
+  @keyframes menu {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
     }
 
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        padding: 0px;
+    100% {
+      opacity: 1;
+      transform: translateY(50px);
     }
+  }
 
-    .lista-menu {
-        display: none;
-        position: absolute;
-        top: 62px;
-        left: 0;
-        width: 100%;
-        background-color: #262626;
-        text-align: center;
-        padding-top: 20px;
-        z-index: 1;
-    }
+  .lista-menu li {
+    margin: 0px;
+  }
 
-    .lista-menu.show-menu {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 76px;
-        animation: menu 0.3s ease-in forwards;
-    }
+  .menu-icon {
+    width: 60px;
+    padding-top: 4px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    @keyframes menu {
-        0% {
-            background: #262626;
-            height: 0vh;
-        }
+  .menu-icon:hover {
+    width: 60px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-        100% {
-            background: #F26241;
-            height: 100vh;
-        }
-    }
+  .a p {
+    width: 200px;
+    color: #403833;
+    padding-top: 15px;
+    transition: all 0.5s;
+  }
 
-    .lista-menu li {
-        margin: 0px;
-    }
+  .a:hover p {
+    width: 200px;
+    background: #f1ff0050;
+    color: #403833;
+    padding-top: 15px;
+    margin: 0px;
+  }
 
-    .menu-icon {
-        display: block;
-        background-color: transparent;
-        border: none;
-        font-size: 1.5rem;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .menu-icon:hover {
-        color: #FFFCF7;
-    }
-
-    .a {
-        color: #FFFCF7;
-        font-weight: 200;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin: 0px;
-    }
-
-    .a:hover {
-        color: #FFFCF7;
-        font-weight: 400;
-        margin: 0px;
-    }
-
-    .link-active {
-        color: #FFFCF7;
-        font-weight: 400;
-        border: 2px solid #FFFCF7;
-        margin: 0px;
-    }
+  .link-active p {
+    width: 200px;
+    background: #f1ff00;
+    color: #403833;
+    font-weight: 575;
+    padding-top: 15px;
+    margin: 0px;
+  }
 }
-
-@media only screen and (max-width: 425px) {
-    .container {
-        padding: 0px;
-    }
-
-    li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 144px;
-        text-align: center;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        padding: 0px;
-    }
-
-    .lista-menu {
-        display: none;
-        position: absolute;
-        top: 62px;
-        left: 0;
-        width: 100%;
-        background-color: #262626;
-        text-align: center;
-        padding-top: 20px;
-        z-index: 1;
-    }
-
-    .lista-menu.show-menu {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 76px;
-        animation: menu 0.3s ease-in forwards;
-    }
-
-    @keyframes menu {
-        0% {
-            background: #262626;
-            height: 0vh;
-        }
-
-        100% {
-            background: #F26241;
-            height: 62vh;
-        }
-    }
-
-    .lista-menu li {
-        margin: 0px;
-    }
-
-    .menu-icon {
-        display: block;
-        background-color: transparent;
-        border: none;
-        font-size: 1.5rem;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .menu-icon:hover {
-        color: #FFFCF7;
-    }
-
-    .a {
-        color: #FFFCF7;
-        font-weight: 200;
-        text-decoration: none;
-        text-transform: uppercase;
-        margin: 0px;
-    }
-
-    .a:hover {
-        color: #FFFCF7;
-        font-weight: 400;
-        margin: 0px;
-    }
-
-    .link-active {
-        color: #FFFCF7;
-        font-weight: 400;
-        border: 2px solid #FFFCF7;
-        margin: 0px;
-    }
-}</style>
+</style>

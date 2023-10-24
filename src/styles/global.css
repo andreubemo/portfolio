@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #403833;
+  letter-spacing: 0.04rem;
+  line-height: 1.2rem;
+  font-weight: 300;
+}
+h1 {
+  color: #403833;
+  font-size: 2.6rem;
+  letter-spacing: 0.08rem;
+  line-height: 2.5rem;
+  font-weight: 930;
+}
+
+h2 {
+  color: #403833;
+  font-size: 1.9rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.9rem;
+  font-weight: 575;
+}
+h3 {
+  color: #403833;
+  font-size: 1.38rem;
+  letter-spacing: 0.06rem;
+  line-height: 1.8rem;
+  font-weight: 355;
+}
+
+span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #403833;
+  letter-spacing: 0.03rem;
+  line-height: 1rem;
+}
+
+button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #403833;
+  letter-spacing: 0.03rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  background: #f1ff00;
+  width: 145px;
+  padding-top: 15px;
+  transition: 3ms ease-out;
+}
+
+button:hover {
+  color: #403833;
+}
+button:active {
+  color: #403833;
+}
+.colores-base {
+  color: #403833;
+  color: #594f48;
+  color: #8c8987;
+  color: #bfbdba;
+  color: #f2f2f0;
+  color: #d5ff00;
+}
+
+img {
+  object-fit: cover;
+}
