@@ -541,7 +541,6 @@ function desactivarHover(mostrarIframe) {
         v-for="(item, index) in descripcionSecciones"
         :key="index"
         v-show="item.categoria === Ilustración"
-        style="margin-bottom: 50px"
       >
         {{ item.seccion }}
       </p>
@@ -729,22 +728,28 @@ function desactivarHover(mostrarIframe) {
 
 .btn-categoria p {
   width: 200px;
+  font-weight: 350;
   color: #403833;
   padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   transition: all 0.5s;
 }
 
 .btn-categoria:hover p {
   width: 200px;
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
+  font-weight: 350;
   padding-top: 15px;
   margin: 0px;
 }
 
 .btn-active p {
   width: 200px;
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
   font-weight: 575;
   padding-top: 15px;
@@ -755,7 +760,7 @@ a {
 }
 .trabajos {
   width: 100%;
-  padding: 100px 0px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -813,8 +818,8 @@ a {
   background: #fff;
 }
 .card h3 {
-  width: 300px;
-  background: #f1ff00;
+  width: 100%;
+  background: #fff100;
   padding-top: 15px;
 }
 
@@ -828,8 +833,8 @@ a {
   background: #fff;
 }
 .card-vertical h3 {
-  width: 300px;
-  background: #f1ff00;
+  width: 100%;
+  background: #fff100;
   padding-top: 15px;
 }
 .card:hover .card-overlay {
@@ -868,7 +873,6 @@ a {
 
 .card-text {
   background: #fff;
-  padding: 0px 23px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -876,7 +880,7 @@ a {
 }
 
 .card-text h3 {
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
   padding-top: 15px;
   letter-spacing: 0.04rem;
@@ -885,6 +889,7 @@ a {
 .card-text p {
   color: #403833;
   letter-spacing: 0.04rem;
+  padding: 0px 23px;
 }
 
 .card-text-vertical {
@@ -897,7 +902,7 @@ a {
 }
 
 .card-text-vertical h3 {
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
   padding-top: 15px;
   letter-spacing: 0.04rem;
@@ -908,12 +913,12 @@ a {
   letter-spacing: 0.04rem;
 }
 .btn-pdf {
-  margin: 15px;
+  margin: 15px 0px;
   text-align: left;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .portfolio {
-    width: 600px;
+    max-width: 600px;
     height: 100vh;
     margin: auto;
     padding: 50px 0px 0px;
@@ -924,7 +929,8 @@ a {
   }
   .trabajos {
     width: 600px;
-    padding: 0px 0px;
+    padding-top: 70px;
+    padding-bottom: 100px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -943,33 +949,80 @@ a {
   }
   .btn-portfolio {
     width: 100%;
+    font-weight: 200;
     padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    gap: 50px;
   }
-  .btn-categoria p:hover {
-    width: 400px;
-    font-size: 1.9rem;
-    letter-spacing: 0.09rem;
-    line-height: 1.9rem;
-    font-weight: 575;
-    background: #f1ff0050;
-    color: #403833;
-    padding-top: 15px;
-    transition: all 0.5s;
+  .btn-portfolio p {
+    font-weight: 200;
+  }
+  .portfolio-galeria {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .portfolio-galeria-vertical {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
   .btn-categoria p {
-    width: 400px;
-    font-size: 1.9rem;
-    letter-spacing: 0.09rem;
+    width: 350px;
+    padding-top: 15px;
+    font-size: 1.7rem;
+    letter-spacing: 0.02rem;
     line-height: 1.9rem;
-    font-weight: 575;
+    font-weight: 400;
+    color: #403833;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.5s;
+  }
+  .btn-categoria p:hover {
+    width: 350px;
+    font-size: 1.7rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    background: #fff10050;
     color: #403833;
     padding-top: 15px;
     transition: all 0.5s;
+  }
+  .btn-active p {
+    width: 350px;
+    background: #fff100;
+    color: #403833;
+    font-size: 1.7rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.9rem;
+    font-weight: 600;
+    padding-top: 15px;
+  }
+  .card h3 {
+    width: 100%;
+    background: #fff100;
+    padding-top: 15px;
+  }
+  .card-vertical h3 {
+    width: 100%;
+    background: #fff100;
+    padding-top: 15px;
   }
 }
 </style>
