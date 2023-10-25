@@ -728,6 +728,7 @@ function desactivarHover(mostrarIframe) {
 
 .btn-categoria p {
   width: 200px;
+  font-weight: 350;
   color: #403833;
   padding-top: 15px;
   display: flex;
@@ -741,6 +742,7 @@ function desactivarHover(mostrarIframe) {
   width: 200px;
   background: #fff100;
   color: #403833;
+  font-weight: 350;
   padding-top: 15px;
   margin: 0px;
 }
@@ -928,6 +930,7 @@ a {
   .trabajos {
     width: 600px;
     padding-top: 70px;
+    padding-bottom: 100px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -946,21 +949,16 @@ a {
   }
   .btn-portfolio {
     width: 100%;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 75px;
-  }
-  .btn-portfolio {
-    width: 100%;
+    font-weight: 200;
     padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+  .btn-portfolio p {
+    font-weight: 200;
   }
   .portfolio-galeria {
     width: 350px;
@@ -987,7 +985,7 @@ a {
     font-size: 1.7rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
-    font-weight: 500;
+    font-weight: 400;
     color: #403833;
     display: flex;
     flex-direction: column;
@@ -1000,7 +998,7 @@ a {
     font-size: 1.7rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
-    font-weight: 500;
+    font-weight: 400;
     background: #fff10050;
     color: #403833;
     padding-top: 15px;

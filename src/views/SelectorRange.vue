@@ -1017,7 +1017,7 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
           <h2>{{ year.info.value }} - {{ hasta.info.value }}</h2>
         </div>
         <div class="items-vidalaboral">
-          <span>
+          <div>
             <h3>
               {{ duracion.info.value }}
               en
@@ -1031,15 +1031,15 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
                 >{{ empresa.info.value }}</a
               >
             </h3>
-          </span>
-          <span>
+          </div>
+          <div>
             <h3>cargo:</h3>
             <h3 style="font-weight: 575">{{ cargo.info.value }}</h3>
-          </span>
+          </div>
         </div>
       </div>
       <div class="items">
-        <span>{{ descripcion.info.value }}</span>
+        <p>{{ descripcion.info.value }}</p>
       </div>
     </div>
     <!-- formacion -->
