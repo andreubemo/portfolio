@@ -163,7 +163,7 @@ const tech = {
 .wrapper {
   width: 200px;
   padding-top: 160px;
-  padding-left: 60px;
+  padding-left: 20px;
   border-radius: 200px;
   display: flex;
   justify-content: center;
@@ -276,6 +276,16 @@ const tech = {
     min-width: 350px;
     max-width: 600px;
   }
+  .wrapper {
+    width: 200px;
+    padding-top: 160px;
+    padding-left: 20px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
 }
 @media only screen and (min-width: 768px) {
   .container {
@@ -286,6 +296,16 @@ const tech = {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .wrapper {
+    width: 200px;
+    padding-top: 160px;
+    padding-left: 65px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
   }
 }
 </style>

@@ -1214,7 +1214,6 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 
 .fondo {
   width: 100%;
-  background: #fffcf7;
   border-radius: 10px;
   padding-bottom: 15px;
   display: flex;
@@ -1456,7 +1455,6 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
     gap: 23px;
   }
   .hard-skills {
-    min-width: 330px;
     max-width: 600px;
     margin: auto;
     display: flex;
