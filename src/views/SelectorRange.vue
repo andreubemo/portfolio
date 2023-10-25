@@ -1008,7 +1008,7 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
       @input="mostrarInfo"
     />
   </div>
-  <div class="general">
+  <div class="container">
     <!-- vida laboral -->
     <div class="vida-laboral">
       <div class="items-vida">
@@ -1142,7 +1142,7 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 </template>
 
 <style scoped>
-.general {
+.container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1213,6 +1213,7 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 }
 
 .fondo {
+  width: 100%;
   background: #fffcf7;
   border-radius: 10px;
   padding-bottom: 15px;
@@ -1222,7 +1223,8 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   gap: 10px;
 }
 .fondo h2 {
-  background: #f1ff00;
+  width: 100%;
+  background: #fff100;
   padding-top: 15px;
 }
 .tools {
@@ -1337,6 +1339,8 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 }
 
 .cita p {
+  width: 100%;
+  text-align: center;
   font-style: italic;
 }
 .cita img {
@@ -1355,12 +1359,13 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 }
 
 .titulo h2 {
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
   padding-top: 15px;
 }
 
 .range {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1415,5 +1420,157 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 /*ONFOCUS INPUT RANGE*/
 .select:focus::-webkit-slider-runnable-track {
   outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    min-width: 350px;
+    max-width: 600px;
+    padding: 0px 8px 55px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+  }
+  .range {
+    min-width: 350px;
+    max-width: 600px;
+    padding: 0px 23px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .skills {
+    min-width: 350px;
+    max-width: 600px;
+    padding: 0px 23px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+  .hard-skills {
+    min-width: 330px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cita {
+    max-width: 350px;
+    padding: 50px 23px 125px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 0px 8px 55px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+  }
+  .range {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .skills {
+    max-width: 600px;
+    padding: 0px 23px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+  .hard-skills {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cita {
+    max-width: 350px;
+    padding: 50px 23px 125px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0px 8px 55px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+  }
+  .range {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .skills {
+    max-width: 1024px;
+    padding: 0px 23px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+  .hard-skills {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cita {
+    width: 350px;
+    padding: 50px 23px 125px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
 }
 </style>

@@ -151,12 +151,14 @@ li {
   width: 200px;
   color: #403833;
   padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
   transition: all 0.5s;
 }
 
 .a:hover p {
   width: 200px;
-  background: #f1ff0050;
+  background: #fff10050;
   color: #403833;
   padding-top: 15px;
   margin: 0px;
@@ -164,7 +166,7 @@ li {
 
 .link-active p {
   width: 200px;
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
   font-weight: 575;
   padding-top: 15px;
@@ -289,7 +291,7 @@ nav.scrolled-down {
 
   .a:hover p {
     width: 200px;
-    background: #f1ff0050;
+    background: #fff10050;
     color: #403833;
     padding-top: 15px;
     margin: 0px;
@@ -297,9 +299,9 @@ nav.scrolled-down {
 
   .link-active p {
     width: 200px;
-    background: #f1ff00;
+    background: #fff100;
     color: #403833;
-    font-weight: 575;
+    font-weight: 600;
     padding-top: 15px;
     margin: 0px;
   }

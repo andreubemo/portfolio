@@ -131,7 +131,7 @@ function submitForm() {
           >Acepto los términos y condiciones</label
         >
       </div>
-      <button type="submit" @click.prevent="submitForm">Registrarse</button>
+      <button type="submit" @click.prevent="submitForm">enviar</button>
     </form>
     <span class="legal">
       Los datos suministrados en el presente formulario serán empleados
@@ -167,7 +167,7 @@ function submitForm() {
 .titulo p {
   width: 100%;
   font-weight: 575;
-  background: #f1ff00;
+  background: #fff100;
   padding-top: 15px;
 }
 
@@ -221,27 +221,23 @@ function submitForm() {
 
 label {
   width: 100%;
-  background: #f1ff00;
+  background: #fff100;
   color: #403833;
   margin: 0px;
   padding: 15px 0px 0px;
 }
 button {
-  width: 145px;
+  width: 135px;
   padding-top: 15px;
   margin: 30px 0px;
-  background: #f1ff00;
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
-  color: #403833;
-  letter-spacing: 0.03rem;
-  line-height: 1.2rem;
-  font-weight: 400;
+  background: #fff100;
+  display: flex;
+  justify-content: flex-start;
   transition: 3ms ease-out;
 }
 .acepto {
   width: 100%;
-  background: #f1ff00;
+  background: #fff100;
   padding: 9px 15px;
   font-size: 15px;
   letter-spacing: 0.04rem;
@@ -298,8 +294,19 @@ input[type="checkbox"]:checked {
 }
 
 @media only screen and (max-width: 768px) {
+  .general {
+    min-width: 350px;
+    max-width: 600px;
+    padding: 62px 23px 0px;
+    margin: auto;
+  }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 768px) {
+  .general {
+    max-width: 600px;
+    padding: 62px 23px 0px;
+    margin: auto;
+  }
 }
 </style>

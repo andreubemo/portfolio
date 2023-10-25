@@ -10,51 +10,51 @@ body {
   margin: 0;
   padding: 0;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #403833;
-  letter-spacing: 0.04rem;
-  line-height: 1.2rem;
-  font-weight: 300;
+  letter-spacing: 0.02rem;
+  line-height: 1rem;
+  font-weight: 400;
 }
 h1 {
   color: #403833;
-  font-size: 2.6rem;
-  letter-spacing: 0.08rem;
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
   line-height: 2.5rem;
-  font-weight: 930;
+  font-weight: 830;
 }
 
 h2 {
   color: #403833;
-  font-size: 1.9rem;
-  letter-spacing: 0.09rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.02rem;
   line-height: 1.9rem;
   font-weight: 575;
 }
 h3 {
   color: #403833;
-  font-size: 1.38rem;
-  letter-spacing: 0.06rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
   line-height: 1.8rem;
-  font-weight: 355;
+  font-weight: 500;
 }
 
 span {
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #403833;
-  letter-spacing: 0.03rem;
-  line-height: 1rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.2rem;
+  font-weight: 600;
 }
 
 button {
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #403833;
-  letter-spacing: 0.03rem;
-  line-height: 1.2rem;
+  letter-spacing: 0.02rem;
+  line-height: 1rem;
   font-weight: 400;
-  background: #f1ff00;
+  background: #fff100;
   width: 145px;
   padding-top: 15px;
   transition: 3ms ease-out;
@@ -62,9 +62,11 @@ button {
 
 button:hover {
   color: #403833;
+  font-weight: 600;
 }
 button:active {
   color: #403833;
+  font-weight: 600;
 }
 .colores-base {
   color: #403833;
