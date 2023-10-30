@@ -177,7 +177,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 501;
   width: 100%;
   height: 62px;
   display: flex;

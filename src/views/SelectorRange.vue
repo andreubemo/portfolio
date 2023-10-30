@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
 //import tech
 import portada from "@/components/portada.vue";
 import tech01 from "@/assets/img/photshop.png";
@@ -28,14 +28,14 @@ const cvAndreu = ref([
     cargo: "Aprendiz de mécanico de compresores de aire",
     empresa: "DICELMAC AUTOMATISMES S.L.",
     descripcion:
-      "Fue mi primer trabajo. Uno de esos trabajos de verano, durante las vacaciones del curso, donde aprovechas el tiempo para ganas tu primer salario. Mi función en la empresa fue limpiar piezas y servir herramientas al mecánico que montaba los compresores.",
+      "Trabajé como aprendiz de mecánico de compresores de aire en la empresa DICELMAC AUTOMATISMES S.L. durante dos meses en el verano de 2001. Mis funciones incluían limpiar piezas y proporcionar herramientas al mecánico que montaba los compresores.",
     formacion: "ESO - Estudios Secundarios Obligatorios",
-    centro: "IES El Suí",
+    centro: "IES El Sui",
     curso: "1996-1999",
     nota: "6,4",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
     sSkills02: "",
     sSkDesc02: "",
     sSkills03: "",
@@ -63,17 +63,17 @@ const cvAndreu = ref([
     cargo: "Operario en rebobinadora de papel de celulosa",
     empresa: "CRISWEN, S.A.",
     descripcion:
-      "Mi función en la empresa era cargar la máquina de papel, rebobinar el papel y extraer el producto para su empaquetado.",
+      "Ocupé el puesto de operario en la rebobinadora de papel de celulosa en la empresa CRISWEN, S.A. durante dos meses en el año 2002. Mis funciones incluían cargar la máquina de papel, rebobinar el papel y extraer el producto para su empaquetado.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "",
     sSkDesc03: "",
     sSkills04: "",
@@ -99,17 +99,17 @@ const cvAndreu = ref([
     cargo: "Operario de carretilla",
     empresa: "ALMACENES DIA%",
     descripcion:
-      "Estuve en el equipo de descarga de camiones con carretilla elevadora.",
+      "Ocupé el puesto de operario de carretilla en la empresa ALMACENES DIA% durante dos meses en el año 2003. Mis funciones incluían realizar las tareas de carga y descarga de camiones utilizando una carretilla elevadora.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "",
     sSkDesc03: "",
     sSkills04: "",
@@ -135,17 +135,17 @@ const cvAndreu = ref([
     cargo: "Responsable de almacén y logística de equipos de montadores",
     empresa: "MOBLES PANORAMA S.A.",
     descripcion:
-      "Después de completar mis estudios en la Escuela Municipal de Arte y Diseño de La Garriga (EMAD), tuve la oportunidad de embarcarme en mi primer trabajo significativo en el mundo laboral. Durante un año, trabajé para obtener mi carnet de conducir tipo B y continuar con mis estudios. Este trabajo no solo me brindó independencia financiera, sino que también me permitió crecer como profesional. En esta experiencia laboral, tuve la fortuna de ser asignado como responsable de una sección en una empresa. Tuve la responsabilidad de recibir los productos de los proveedores, optimizar el espacio de almacenamiento por clientes y organizar los grupos de trabajo junto con sus rutas de atención a clientes. Esta experiencia única, motivada por la necesidad y la casualidad, me permitió desarrollar habilidades de liderazgo, gestión y organización. A través de esta oportunidad, pude demostrar mi capacidad para asumir responsabilidades y coordinar eficientemente distintos aspectos del trabajo. Aprendí a adaptarme rápidamente a nuevas situaciones y a optimizar los recursos disponibles para lograr los objetivos establecidos. Este primer trabajo importante en mi vida laboral me ha dejado una valiosa lección sobre el crecimiento profesional y la capacidad de asumir roles de liderazgo. Estoy entusiasmado por aplicar estos aprendizajes y seguir avanzando en mi trayectoria profesional.",
+      "Fui responsable de recibir los productos de los proveedores, optimizar el espacio de almacenamiento por clientes y organizar los grupos de trabajo junto con sus rutas de atención a clientes. Durante este tiempo, demostré mi capacidad para asumir responsabilidades, coordinar eficientemente distintos aspectos del trabajo y adaptarme rápidamente a nuevas situaciones. También aprendí a optimizar los recursos disponibles para lograr los objetivos establecidos.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "",
     sSkDesc03: "",
     sSkills04: "",
@@ -171,17 +171,17 @@ const cvAndreu = ref([
     cargo: "Responsable de almacén",
     empresa: "SAURMIDECOR S.A.",
     descripcion:
-      "Motivado por mi reciente emancipación de casa de mis padres, decidí dar un impulso a mi carrera profesional. Tras una experiencia gratificante en una empresa anterior, mis compañeros me recomendaron para un puesto en una empresa más grande del mismo sector, enfocada en la logística y el mobiliario. En esta nueva posición, asumí el rol de organizar el equipo de almacén, gestionar el inventario y coordinar la distribución de repartos a los transportistas. Mi enfoque se centró en garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva. Durante mi desempeño, demostré habilidades destacadas en la gestión del equipo y en el análisis de la cadena de suministro. Mi capacidad para tomar decisiones rápidas y resolver problemas de manera efectiva me permitió mantener un flujo constante y eficiente de mercancías. Estoy emocionado por continuar aplicando mi experiencia en logística y mobiliario, así como mis habilidades de organización y gestión, en futuras oportunidades profesionales.",
+      "Mi objetivo era garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "",
     sSkDesc03: "",
     sSkills04: "",
@@ -207,17 +207,17 @@ const cvAndreu = ref([
     cargo: "Responsable de almacén",
     empresa: "SAURMIDECOR S.A.",
     descripcion:
-      "Motivado por mi reciente emancipación de casa de mis padres, decidí dar un impulso a mi carrera profesional. Tras una experiencia gratificante en una empresa anterior, mis compañeros me recomendaron para un puesto en una empresa más grande del mismo sector, enfocada en la logística y el mobiliario. En esta nueva posición, asumí el rol de organizar el equipo de almacén, gestionar el inventario y coordinar la distribución de repartos a los transportistas. Mi enfoque se centró en garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva. Durante mi desempeño, demostré habilidades destacadas en la gestión del equipo y en el análisis de la cadena de suministro. Mi capacidad para tomar decisiones rápidas y resolver problemas de manera efectiva me permitió mantener un flujo constante y eficiente de mercancías. Estoy emocionado por continuar aplicando mi experiencia en logística y mobiliario, así como mis habilidades de organización y gestión, en futuras oportunidades profesionales.",
+      "Mi objetivo era garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "",
     sSkDesc03: "",
     sSkills04: "",
@@ -243,17 +243,17 @@ const cvAndreu = ref([
     cargo: "Responsable de almacén",
     empresa: "SAURMIDECOR S.A.",
     descripcion:
-      "Motivado por mi reciente emancipación de casa de mis padres, decidí dar un impulso a mi carrera profesional. Tras una experiencia gratificante en una empresa anterior, mis compañeros me recomendaron para un puesto en una empresa más grande del mismo sector, enfocada en la logística y el mobiliario. En esta nueva posición, asumí el rol de organizar el equipo de almacén, gestionar el inventario y coordinar la distribución de repartos a los transportistas. Mi enfoque se centró en garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva. Durante mi desempeño, demostré habilidades destacadas en la gestión del equipo y en el análisis de la cadena de suministro. Mi capacidad para tomar decisiones rápidas y resolver problemas de manera efectiva me permitió mantener un flujo constante y eficiente de mercancías. Estoy emocionado por continuar aplicando mi experiencia en logística y mobiliario, así como mis habilidades de organización y gestión, en futuras oportunidades profesionales.",
+      "Mi objetivo era garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "",
     sSkDesc03: "",
     sSkills04: "",
@@ -279,20 +279,20 @@ const cvAndreu = ref([
     cargo: "Responsable de almacén",
     empresa: "SAURMIDECOR S.A.",
     descripcion:
-      "Motivado por mi reciente emancipación de casa de mis padres, decidí dar un impulso a mi carrera profesional. Tras una experiencia gratificante en una empresa anterior, mis compañeros me recomendaron para un puesto en una empresa más grande del mismo sector, enfocada en la logística y el mobiliario. En esta nueva posición, asumí el rol de organizar el equipo de almacén, gestionar el inventario y coordinar la distribución de repartos a los transportistas. Mi enfoque se centró en garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva. Durante mi desempeño, demostré habilidades destacadas en la gestión del equipo y en el análisis de la cadena de suministro. Mi capacidad para tomar decisiones rápidas y resolver problemas de manera efectiva me permitió mantener un flujo constante y eficiente de mercancías. Estoy emocionado por continuar aplicando mi experiencia en logística y mobiliario, así como mis habilidades de organización y gestión, en futuras oportunidades profesionales.",
+      "Mi objetivo era garantizar una eficiente operativa logística, optimizando los procesos de almacenamiento y asegurando una entrega puntual y efectiva.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "",
     sSkDesc04: "",
     sSkills05: "",
@@ -317,23 +317,23 @@ const cvAndreu = ref([
     cargo: "Cocinero",
     empresa: "CAFÈ EL PILAR",
     descripcion:
-      "Tras verse afectado por la crisis económica de 2008, aproveché mi tiempo en el paro para realizar un curso de Macromedia. Una vez finalizado, decidí buscar trabajo temporal en las Islas Baleares. Sorprendentemente, encontré empleo como cocinero, una experiencia totalmente nueva para mí a nivel laboral. Aunque siempre había tenido el hobby de cocinar en mi propia cocina, en este trabajo me encontré solo frente a los desafíos. Fui responsable de diseñar menús, gestionar la preparación y logística de los productos, y cocinar para servicios de mañana y tarde-noche. Esta experiencia me permitió desarrollar habilidades de aprendizaje activo y análisis de resolución de problemas en un entorno dinámico y exigente. Aprendí rápidamente sobre la marcha y me adapté a los desafíos diarios, demostrando mi capacidad para asumir responsabilidades y enfrentar situaciones nuevas. Mi disposición para aprender activamente y mi habilidad para analizar y resolver problemas se reflejan en mi capacidad para enfrentar y superar desafíos laborales de manera eficiente y efectiva. Estoy ansioso por aplicar estas habilidades y contribuir al éxito de futuros proyectos.",
+      "Fui responsable de diseñar menús, gestionar la preparación y logística de los productos, y cocinar para servicios de mañana y tarde-noche. Aprendí rápidamente sobre la marcha y me adapté a los desafíos diarios, demostrando mi capacidad para asumir responsabilidades y enfrentar situaciones nuevas.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "",
     sSkDesc05: "",
     hSkills01: "Diseño gráfico",
@@ -356,26 +356,26 @@ const cvAndreu = ref([
     cargo: "Oficial de primera en cartonaje para alimentación",
     empresa: "MEDIOAMBIENTE PACK S.A.",
     descripcion:
-      "Un familiar me recomendó para un puesto en una empresa en Valencia. Desde mi llegada, asumí el rol de reemplazar a la persona a cargo de la impresora. A medida que ganaba experiencia, me familiaricé con la maquinaria de la empresa y llegué a supervisar los equipos de trabajo en las onduladoras de papel. Una de mis responsabilidades principales era estandarizar los procesos de producción de cuatro de las siete máquinas de la empresa.",
+      "Trabajé durante 5 años como oficial de primera en una empresa de cartonaje para alimentación en Valencia. Durante este tiempo, asumí responsabilidades crecientes, desde operar la impresora hasta supervisar los equipos de trabajo y estandarizar los procesos de producción.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -396,26 +396,26 @@ const cvAndreu = ref([
     cargo: "Oficial de primera en cartonaje para alimentación",
     empresa: "MEDIOAMBIENTE PACK S.A.",
     descripcion:
-      "Un familiar me recomendó para un puesto en una empresa en Valencia. Desde mi llegada, asumí el rol de reemplazar a la persona a cargo de la impresora. A medida que ganaba experiencia, me familiaricé con la maquinaria de la empresa y llegué a supervisar los equipos de trabajo en las onduladoras de papel. Una de mis responsabilidades principales era estandarizar los procesos de producción de cuatro de las siete máquinas de la empresa.",
+      "Trabajé durante 5 años como oficial de primera en una empresa de cartonaje para alimentación en Valencia. Durante este tiempo, asumí responsabilidades crecientes, desde operar la impresora hasta supervisar los equipos de trabajo y estandarizar los procesos de producción.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -436,26 +436,26 @@ const cvAndreu = ref([
     cargo: "Oficial de primera en cartonaje para alimentación",
     empresa: "MEDIOAMBIENTE PACK S.A.",
     descripcion:
-      "Un familiar me recomendó para un puesto en una empresa en Valencia. Desde mi llegada, asumí el rol de reemplazar a la persona a cargo de la impresora. A medida que ganaba experiencia, me familiaricé con la maquinaria de la empresa y llegué a supervisar los equipos de trabajo en las onduladoras de papel. Una de mis responsabilidades principales era estandarizar los procesos de producción de cuatro de las siete máquinas de la empresa.",
+      "Trabajé durante 5 años como oficial de primera en una empresa de cartonaje para alimentación en Valencia. Durante este tiempo, asumí responsabilidades crecientes, desde operar la impresora hasta supervisar los equipos de trabajo y estandarizar los procesos de producción.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -476,26 +476,26 @@ const cvAndreu = ref([
     cargo: "Oficial de primera en cartonaje para alimentación",
     empresa: "MEDIOAMBIENTE PACK S.A.",
     descripcion:
-      "Un familiar me recomendó para un puesto en una empresa en Valencia. Desde mi llegada, asumí el rol de reemplazar a la persona a cargo de la impresora. A medida que ganaba experiencia, me familiaricé con la maquinaria de la empresa y llegué a supervisar los equipos de trabajo en las onduladoras de papel. Una de mis responsabilidades principales era estandarizar los procesos de producción de cuatro de las siete máquinas de la empresa.",
+      "Trabajé durante 5 años como oficial de primera en una empresa de cartonaje para alimentación en Valencia. Durante este tiempo, asumí responsabilidades crecientes, desde operar la impresora hasta supervisar los equipos de trabajo y estandarizar los procesos de producción.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -516,26 +516,26 @@ const cvAndreu = ref([
     cargo: "Oficial de primera en cartonaje para alimentación",
     empresa: "MEDIOAMBIENTE PACK S.A.",
     descripcion:
-      "Un familiar me recomendó para un puesto en una empresa en Valencia. Desde mi llegada, asumí el rol de reemplazar a la persona a cargo de la impresora. A medida que ganaba experiencia, me familiaricé con la maquinaria de la empresa y llegué a supervisar los equipos de trabajo en las onduladoras de papel. Una de mis responsabilidades principales era estandarizar los procesos de producción de cuatro de las siete máquinas de la empresa.",
+      "Trabajé durante 5 años como oficial de primera en una empresa de cartonaje para alimentación en Valencia. Durante este tiempo, asumí responsabilidades crecientes, desde operar la impresora hasta supervisar los equipos de trabajo y estandarizar los procesos de producción.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -556,26 +556,26 @@ const cvAndreu = ref([
     cargo: "Oficial de primera en cartonaje para alimentación",
     empresa: "MEDIOAMBIENTE PACK S.A.",
     descripcion:
-      "Un familiar me recomendó para un puesto en una empresa en Valencia. Desde mi llegada, asumí el rol de reemplazar a la persona a cargo de la impresora. A medida que ganaba experiencia, me familiaricé con la maquinaria de la empresa y llegué a supervisar los equipos de trabajo en las onduladoras de papel. Una de mis responsabilidades principales era estandarizar los procesos de producción de cuatro de las siete máquinas de la empresa.",
+      "Trabajé durante 5 años como oficial de primera en una empresa de cartonaje para alimentación en Valencia. Durante este tiempo, asumí responsabilidades crecientes, desde operar la impresora hasta supervisar los equipos de trabajo y estandarizar los procesos de producción.",
     formacion: "CFGM - Arte final en diseño gráfico",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2002-2004",
     nota: "7,6",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -597,26 +597,26 @@ const cvAndreu = ref([
     cargo: "Diseñador gráfico",
     empresa: "VIENTO NORTE SUR",
     descripcion:
-      "Mi primer empleo como diseñador gráfico fue en Viento Norte Sur, una organización dedicada a la coordinación de viajes solidarios en todo el mundo. Me encargaron rediseñar su imagen de marca y mejorar la experiencia de usuario en su sitio web. Trabajé en este proyecto mientras cursaba el Grado Superior en Gráfica Interactiva.",
+      "En 2016, comencé mi carrera como diseñador gráfico en Viento Norte Sur, una organización dedicada a la coordinación de viajes solidarios en todo el mundo. Durante dos años, trabajé en el rediseño de la imagen de marca y la mejora de la experiencia de usuario de su sitio web. Este proyecto me permitió desarrollar mis habilidades de diseño gráfico, así como mis habilidades de trabajo en equipo y gestión de proyectos.",
     formacion: "CFGS - Gráfica Interactiva",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2016-2018",
     nota: "7,9",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01: "Adobe Creative Suite, ilustración, tipografía y fotografía",
     hSkills02: "Logística",
@@ -638,26 +638,26 @@ const cvAndreu = ref([
     cargo: "Diseñador gráfico",
     empresa: "VIENTO NORTE SUR",
     descripcion:
-      "Mi primer empleo como diseñador gráfico fue en Viento Norte Sur, una organización dedicada a la coordinación de viajes solidarios en todo el mundo. Me encargaron rediseñar su imagen de marca y mejorar la experiencia de usuario en su sitio web. Trabajé en este proyecto mientras cursaba el Grado Superior en Gráfica Interactiva.",
+      "En 2016, comencé mi carrera como diseñador gráfico en Viento Norte Sur, una organización dedicada a la coordinación de viajes solidarios en todo el mundo. Durante dos años, trabajé en el rediseño de la imagen de marca y la mejora de la experiencia de usuario de su sitio web. Este proyecto me permitió desarrollar mis habilidades de diseño gráfico, así como mis habilidades de trabajo en equipo y gestión de proyectos.",
     formacion: "CFGS - Gráfica Interactiva",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2016-2018",
     nota: "7,9",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -667,8 +667,8 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
-    hSkTools04: "Mis herramientas frontend: UX, html5, css3",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI",
   },
   {
     id: 17,
@@ -680,26 +680,26 @@ const cvAndreu = ref([
     cargo: "Diseñador gráfico",
     empresa: "SIMBÒLIC COMUNICACIÓ",
     descripcion:
-      "Tras finalizar el primer Ciclo Formativo de Grado Superior en diseño, tuve la oportunidad de quedarme en la empresa donde realicé mis prácticas. Mi labor se centró en el branding de diversos clientes, abarcando el diseño y rediseño de logotipos, maquetación editorial y algunos proyectos audiovisuales. Trabajé en esta empresa mientras cursaba mi segundo año del Grado Superior en Gráfica Publicitaria.",
+      "Tras finalizar el primer ciclo formativo de grado superior en diseño, tuve la oportunidad de continuar mi formación en la empresa donde realicé mis prácticas. Durante un año, trabajé en el branding de diversos clientes, abarcando el diseño y rediseño de logotipos, maquetación editorial y algunos proyectos audiovisuales.",
     formacion: "CFGS - Gráfica Publicitaria.",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2017-2018",
     nota: "8,4",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -709,8 +709,8 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
-    hSkTools04: "Mis herramientas frontend: UX, html5, css3",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI",
   },
   {
     id: 18,
@@ -722,26 +722,26 @@ const cvAndreu = ref([
     cargo: "Diseñador gráfico",
     empresa: "PHOENIX TEEFACTORY S.L.",
     descripcion:
-      "Después de mi formación final como diseñador gráfico, fui contratado en una empresa de serigrafía y estampación de camisetas en el departamento de diseño gráfico. Realicé tareas de tratamiento de imágenes, preparación de archivos para fotolitos y brindé soporte en el laboratorio de insolación.",
+      "Tras finalizar mi formación como diseñador gráfico, fui contratado en una empresa de serigrafía y estampación de camisetas en el departamento de diseño gráfico. Durante un año, realicé tareas de tratamiento de imágenes, preparación de archivos para fotolitos y soporte en el laboratorio de insolación.",
     formacion: "CFGS - Gráfica Publicitaria",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2017-2018",
     nota: "8,4",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -751,8 +751,8 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
-    hSkTools04: "Mis herramientas frontend: UX, html5, css3",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI",
   },
   {
     id: 19,
@@ -761,29 +761,29 @@ const cvAndreu = ref([
     añoMin: "|",
     hasta: "2022",
     duracion: "2 años",
-    cargo: "Diseñador gráfico y soporte en taller de serigrafía",
+    cargo: "Diseñador UX/UI y soporte en taller de serigrafía",
     empresa: "GLOBAL MANAGING S.L.U.",
     descripcion:
-      "La pandemia afectó a las empresas, pero tuve la suerte de ser contratado por Global Managing para liderar el proyecto de ecommerce. Antes de eso, estuve a cargo del taller de entelaje.",
+      "A pesar de los efectos de la pandemia, tuve la suerte de ser contratado por Global Managing para liderar el proyecto de ecommerce. De forma paralela, fui responsable del taller de entelaje.",
     formacion: "CFGS - Gráfica Publicitaria",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2017-2018",
     nota: "8,4",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -793,8 +793,8 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
-    hSkTools04: "Mis herramientas frontend: UX, html5, css3",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI",
   },
   {
     id: 20,
@@ -803,29 +803,29 @@ const cvAndreu = ref([
     añoMin: "|",
     hasta: "2022",
     duracion: "2 años",
-    cargo: "Diseñador gráfico y soporte en taller de serigrafía",
+    cargo: "Diseñador UX/UI y soporte en taller de serigrafía",
     empresa: "GLOBAL MANAGING S.L.U.",
     descripcion:
-      "La pandemia afectó a las empresas, pero tuve la suerte de ser contratado por Global Managing para liderar el proyecto de ecommerce. Antes de eso, estuve a cargo del taller de entelaje.",
+      "A pesar de los efectos de la pandemia, tuve la suerte de ser contratado por Global Managing para liderar el proyecto de ecommerce. De forma paralela, fui responsable del taller de entelaje.",
     formacion: "CFGS - Gráfica Publicitaria",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2017-2018",
     nota: "8,4",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -835,8 +835,8 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
-    hSkTools04: "Mis herramientas frontend: UX, html5, css3",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI",
   },
   {
     id: 21,
@@ -850,24 +850,24 @@ const cvAndreu = ref([
     descripcion:
       "La pandemia afectó a las empresas, pero tuve la suerte de ser contratado por Global Managing para liderar el proyecto de ecommerce.",
     formacion: "CFGS - Gráfica Publicitaria",
-    centro: "Escola Municipal d'Art i Diseny de la Garriga (EMAD)",
+    centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2017-2018",
     nota: "8,4",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -877,8 +877,8 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
-    hSkTools04: "Mis herramientas frontend: UX, html5, css3",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI",
   },
   {
     id: 22,
@@ -890,26 +890,26 @@ const cvAndreu = ref([
     cargo: "Diseñador UX/UI",
     empresa: "www.esdeveniments.cat",
     descripcion:
-      "Con toda mi trayectoria y conocimientos, me especializo en diseño UX/UI. Aporto valores a equipos de diseño en empresas tecnológicas. Actualmente trabajo en pequeños proyectos reales como autónomo, pero mi objetivo es unirme a un equipo. Estoy listo para colaborar en desafíos del diseño digital y crear experiencias visuales impactantes. Si buscas un diseñador gráfico Frontend creativo y resolutivo, contáctame.",
+      "Diseñador UX/UI con experiencia en equipos de diseño de empresas tecnológicas. Actualmente trabajo como autónomo en pequeños proyectos reales, pero busco unirme a un equipo para colaborar en desafíos del diseño digital y crear experiencias visuales impactantes. Soy un diseñador gráfico Frontend creativo y resolutivo.",
     formacion: "Curso de especialización - Frontend web developer",
     centro: "Universitat Autónoma de Barcelona",
     curso: "2022-2023",
     nota: "7",
     sSkills01: "Aprendizaje activo",
     sSkDesc01:
-      "Nuevas tecnologias, nuevos tiempos. Se que un continuo aprendizaje me va a acompañar a lo largo de mi trayectoria. Por eso se que acomodarse no es una opción.",
-    sSkills02: "Analsis y resolución de problemas",
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
     sSkDesc02:
-      "La revolución constante de la tecnología nos obliga a tener herramientas para saber gestionar los cambios.",
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
     sSkills03: "Flexibilidd y resiliencia",
     sSkDesc03:
-      "Detectar las limitaciones y los problemas con los timings me lleva a ser, no solo resolutivo, sino a adaptar la solución al entorno de trabajo.",
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
     sSkills04: "Gestión del cambio",
     sSkDesc04:
-      "El cambio es algo constante en todos los escenarios de la vida. El cambio es positivo. El cambio nos hace crecer.",
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
     sSkills05: "Inteligencia emocional y empatía",
     sSkDesc05:
-      "A lo largo de mi vida labral y personal he aprendido que el trabajo en equipo es esencial para lograr ejecutar cualquier proyecto.",
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
     hSkills01: "Diseño gráfico",
     hSkTools01:
       "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
@@ -919,9 +919,9 @@ const cvAndreu = ref([
     hSkills03: "Estandarizar procesos de producción",
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
-    hSkills04: "Diseño gráfico Frontend",
+    hSkills04: "Diseño web",
     hSkTools04:
-      "Mis herramientas frontend: UX, html5, css3, Javascript(Vue3), Figma.",
+      "Mis herramientas como diseñador UX/UI, Javascript(Vue3), Figma.",
   },
 ]);
 
@@ -991,24 +991,46 @@ const hSkills03 = mostrarInfo("hSkills03", "");
 const hSkTools03 = mostrarInfo("hSkTools03", "");
 const hSkills04 = mostrarInfo("hSkills04", "");
 const hSkTools04 = mostrarInfo("hSkTools04", "");
+
+function handleScroll() {
+  const scrollTop = window.scrollY;
+  const range = document.querySelector(".range");
+  const contenido = document.querySelector(".vida-laboral");
+
+  if (scrollTop > range.offsetTop - 70) {
+    isFixed.value = true;
+    range.classList.add("fixed");
+    contenido.classList.add("espacio-contenido");
+  } else {
+    isFixed.value = false;
+    range.classList.remove("fixed");
+    contenido.classList.remove("espacio-contenido");
+  }
+}
+
+const isFixed = ref(null);
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
-  <portada />
-  <div class="range">
-    <h1>currículum</h1>
-    <p>desliza para ver el contenido de cada año</p>
-    <h2>{{ year.info.value }}</h2>
-    <input
-      class="select"
-      type="range"
-      :min="cvAndreu[0]"
-      :max="cvAndreu.length - 1"
-      v-model="valorSelect"
-      @input="mostrarInfo"
-    />
-  </div>
   <div class="container">
+    <portada />
+    <div class="range">
+      <h1>currículum</h1>
+      <p>desliza para ver el contenido de cada año</p>
+      <h2>{{ year.info.value }}</h2>
+      <input
+        class="select"
+        type="range"
+        :min="cvAndreu[0]"
+        :max="cvAndreu.length - 1"
+        v-model="valorSelect"
+        @input="mostrarInfo"
+      />
+    </div>
     <!-- vida laboral -->
     <div class="vida-laboral">
       <div class="items-vida">
@@ -1061,87 +1083,130 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
         </div>
       </div>
     </div>
-  </div>
-  <!-- soft skills -->
-  <div class="skills">
-    <div class="soft-skills">
-      <div class="titulo">
-        <h1>soft skills</h1>
-      </div>
-      <div class="items-skills">
-        <div class="fondo" v-if="sSkills01.info.value && sSkDesc01.info.value">
-          <h2>{{ sSkills01.info.value }}</h2>
-          <div>{{ sSkDesc01.info.value }}</div>
+    <!-- soft skills -->
+    <div class="skills">
+      <div class="soft-skills">
+        <div class="titulo">
+          <h1>soft skills</h1>
         </div>
-        <div class="fondo" v-if="sSkills02.info.value && sSkDesc02.info.value">
-          <h2>{{ sSkills02.info.value }}</h2>
-          <div>{{ sSkDesc02.info.value }}</div>
-        </div>
-        <div class="fondo" v-if="sSkills03.info.value && sSkDesc03.info.value">
-          <h2>{{ sSkills03.info.value }}</h2>
-          <div>{{ sSkDesc03.info.value }}</div>
-        </div>
-        <div class="fondo" v-if="sSkills04.info.value && sSkDesc04.info.value">
-          <h2>{{ sSkills04.info.value }}</h2>
-          <div>{{ sSkDesc04.info.value }}</div>
-        </div>
-        <div class="fondo" v-if="sSkills05.info.value && sSkDesc05.info.value">
-          <h2>{{ sSkills05.info.value }}</h2>
-          <div>{{ sSkDesc05.info.value }}</div>
-        </div>
-      </div>
-    </div>
-    <div class="hard-skills">
-      <div class="titulo">
-        <h1>hard skills</h1>
-      </div>
-      <div class="items-skills">
-        <div class="fondo" v-if="hSkills01.info.value && hSkTools01.info.value">
-          <h2>{{ hSkills01.info.value }}</h2>
-          <div>{{ hSkTools01.info.value }}</div>
-          <div class="tools">
-            <img :src="tech.photoshop" alt="photoshop" />
-            <img :src="tech.illustrator" alt="illustrator" />
-            <img :src="tech.indesign" alt="indesign" />
-            <img :src="tech.premiere" alt="premiere" />
-            <img :src="tech.aftereffects" alt="aftereffects" />
-            <img :src="tech.xd" alt="xd" />
+        <div class="items-skills">
+          <div
+            class="fondo"
+            v-if="sSkills01.info.value && sSkDesc01.info.value"
+          >
+            <h2>{{ sSkills01.info.value }}</h2>
+            <div>{{ sSkDesc01.info.value }}</div>
           </div>
-        </div>
-        <div class="fondo" v-if="hSkills02.info.value && hSkTools02.info.value">
-          <h2>{{ hSkills02.info.value }}</h2>
-          <div>{{ hSkTools02.info.value }}</div>
-        </div>
-        <div class="fondo" v-if="hSkills03.info.value && hSkTools03.info.value">
-          <h2>{{ hSkills03.info.value }}</h2>
-          <div>{{ hSkTools03.info.value }}</div>
-        </div>
-        <div class="fondo" v-if="hSkills04.info.value && hSkTools04.info.value">
-          <h2>{{ hSkills04.info.value }}</h2>
-          <div>{{ hSkTools04.info.value }}</div>
-          <div class="tools">
-            <img :src="tech.wordpress" alt="wordpress" />
-            <img :src="tech.html" alt="html" />
-            <img :src="tech.css" alt="css" />
-            <img :src="tech.javascript" alt="javascript" />
-            <img :src="tech.vsc" alt="vsc" />
-            <img :src="tech.vue" alt="vue" />
+          <div
+            class="fondo"
+            v-if="sSkills02.info.value && sSkDesc02.info.value"
+          >
+            <h2>{{ sSkills02.info.value }}</h2>
+            <div>{{ sSkDesc02.info.value }}</div>
+          </div>
+          <div
+            class="fondo"
+            v-if="sSkills03.info.value && sSkDesc03.info.value"
+          >
+            <h2>{{ sSkills03.info.value }}</h2>
+            <div>{{ sSkDesc03.info.value }}</div>
+          </div>
+          <div
+            class="fondo"
+            v-if="sSkills04.info.value && sSkDesc04.info.value"
+          >
+            <h2>{{ sSkills04.info.value }}</h2>
+            <div>{{ sSkDesc04.info.value }}</div>
+          </div>
+          <div
+            class="fondo"
+            v-if="sSkills05.info.value && sSkDesc05.info.value"
+          >
+            <h2>{{ sSkills05.info.value }}</h2>
+            <div>{{ sSkDesc05.info.value }}</div>
           </div>
         </div>
       </div>
+      <div class="hard-skills">
+        <div class="titulo">
+          <h1>hard skills</h1>
+        </div>
+        <div class="items-skills">
+          <div
+            class="fondo"
+            v-if="hSkills01.info.value && hSkTools01.info.value"
+          >
+            <h2>{{ hSkills01.info.value }}</h2>
+            <div>{{ hSkTools01.info.value }}</div>
+            <div class="tools">
+              <img :src="tech.photoshop" alt="photoshop" />
+              <img :src="tech.illustrator" alt="illustrator" />
+              <img :src="tech.indesign" alt="indesign" />
+              <img :src="tech.premiere" alt="premiere" />
+              <img :src="tech.aftereffects" alt="aftereffects" />
+              <img :src="tech.xd" alt="xd" />
+            </div>
+          </div>
+          <div
+            class="fondo"
+            v-if="hSkills02.info.value && hSkTools02.info.value"
+          >
+            <h2>{{ hSkills02.info.value }}</h2>
+            <div>{{ hSkTools02.info.value }}</div>
+          </div>
+          <div
+            class="fondo"
+            v-if="hSkills03.info.value && hSkTools03.info.value"
+          >
+            <h2>{{ hSkills03.info.value }}</h2>
+            <div>{{ hSkTools03.info.value }}</div>
+          </div>
+          <div
+            class="fondo"
+            v-if="hSkills04.info.value && hSkTools04.info.value"
+          >
+            <h2>{{ hSkills04.info.value }}</h2>
+            <div>{{ hSkTools04.info.value }}</div>
+            <div class="tools">
+              <img :src="tech.wordpress" alt="wordpress" />
+              <img :src="tech.html" alt="html" />
+              <img :src="tech.css" alt="css" />
+              <img :src="tech.javascript" alt="javascript" />
+              <img :src="tech.vsc" alt="vsc" />
+              <img :src="tech.vue" alt="vue" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="cita">
-    <img :src="steveJobs" alt="steve-jobs" />
-    <p>
-      “El diseño no es solo lo que parece y se siente. El diseño es cómo
-      funciona“
-    </p>
-    <p>Steve Jobs</p>
+    <div class="cita">
+      <img :src="steveJobs" alt="steve-jobs" />
+      <p>
+        “El diseño no es solo lo que parece y se siente. El diseño es cómo
+        funciona“
+      </p>
+      <p>Steve Jobs</p>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.espacio-contenido {
+  margin-top: 220px;
+}
+.fixed {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 70px;
+  z-index: 500;
+}
 .container {
   width: 100%;
   display: flex;
@@ -1365,12 +1430,13 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
 
 .range {
   width: 100%;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin: 0px 15px 15px;
+  padding: 15px 0px 30px;
 }
 .select:focus {
   outline: none;
@@ -1421,6 +1487,9 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   outline: none;
 }
 @media only screen and (max-width: 768px) {
+  .fixed {
+    width: 600px;
+  }
   .container {
     min-width: 350px;
     max-width: 600px;
@@ -1435,8 +1504,8 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   .range {
     min-width: 350px;
     max-width: 600px;
-    padding: 0px 23px;
-    margin: auto;
+    background: #fff;
+    padding: 15px 0px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1474,6 +1543,9 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   }
 }
 @media only screen and (min-width: 768px) {
+  .fixed {
+    width: 600px;
+  }
   .container {
     max-width: 600px;
     padding: 0px 8px 55px;
@@ -1486,7 +1558,8 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   }
   .range {
     max-width: 600px;
-    margin: auto;
+    padding: 15px 0px 30px;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1523,8 +1596,11 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   }
 }
 @media only screen and (min-width: 1024px) {
+  .fixed {
+    width: 600px;
+  }
   .container {
-    max-width: 1024px;
+    max-width: 600px;
     padding: 0px 8px 55px;
     margin: auto;
     display: flex;
@@ -1535,7 +1611,8 @@ const hSkTools04 = mostrarInfo("hSkTools04", "");
   }
   .range {
     max-width: 1024px;
-    margin: auto;
+    padding: 15px 0px 30px;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;

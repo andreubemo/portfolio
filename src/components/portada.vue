@@ -13,9 +13,6 @@ import tech11 from "@/assets/img/visualstudiocode.png";
 import tech12 from "@/assets/img/vue.png";
 import tech13 from "@/assets/img/react.png";
 import logoEsdeveniments from "@/assets/img/logo-esdeveniments.png";
-import mockupEsdeveniments01 from "@/assets/img/mockup-esdeveniments-01.png";
-import mockupEsdeveniments02 from "@/assets/img/mockup-esdeveniments-02.png";
-import mockupEsdeveniments03 from "@/assets/img/mockup-esdeveniments-03.png";
 import fotoPerfil from "@/assets/img/andreu-bemo.png";
 //CONTENIDO TECH
 const tech = {
@@ -132,7 +129,7 @@ const tech = {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .profile-image {
   width: 180px;
@@ -163,7 +160,6 @@ const tech = {
 .wrapper {
   width: 200px;
   padding-top: 160px;
-  padding-left: 20px;
   border-radius: 200px;
   display: flex;
   justify-content: center;
@@ -279,7 +275,6 @@ const tech = {
   .wrapper {
     width: 200px;
     padding-top: 160px;
-    padding-left: 20px;
     border-radius: 200px;
     display: flex;
     justify-content: center;
@@ -300,7 +295,6 @@ const tech = {
   .wrapper {
     width: 200px;
     padding-top: 160px;
-    padding-left: 65px;
     border-radius: 200px;
     display: flex;
     justify-content: center;
