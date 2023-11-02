@@ -131,8 +131,10 @@ function submitForm() {
           >Acepto los términos y condiciones</label
         >
       </div>
-      <button type="submit" @click.prevent="submitForm">enviar</button>
     </form>
+    <div class="btn">
+      <button type="submit" @click.prevent="submitForm">enviar</button>
+    </div>
     <span class="legal">
       Los datos suministrados en el presente formulario serán empleados
       exclusivamente con la finalidad de realizar un análisis del feedback
@@ -148,7 +150,8 @@ function submitForm() {
 <style scoped>
 .general {
   width: 100%;
-  padding: 62px 23px 0px;
+  height: 100%;
+  padding: 100px 23px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,18 +219,24 @@ function submitForm() {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 label {
-  width: 100%;
+  width: 200px;
   background: #fff100;
   color: #403833;
   margin: 0px;
   padding: 15px 0px 0px;
 }
+.btn {
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
 button {
-  width: 135px;
+  width: 200px;
   padding-top: 15px;
   margin: 30px 0px;
   background: #fff100;
@@ -297,7 +306,7 @@ input[type="checkbox"]:checked {
   .general {
     min-width: 350px;
     max-width: 600px;
-    padding: 62px 23px 0px;
+    padding: 100px 23px 0px;
     margin: auto;
   }
 }
@@ -305,7 +314,7 @@ input[type="checkbox"]:checked {
 @media only screen and (min-width: 768px) {
   .general {
     max-width: 600px;
-    padding: 62px 23px 0px;
+    padding: 100px 23px 0px;
     margin: auto;
   }
 }

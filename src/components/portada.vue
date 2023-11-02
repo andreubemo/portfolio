@@ -132,16 +132,16 @@ const tech = {
   align-items: center;
 }
 .profile-image {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 200px;
   position: absolute;
   z-index: 1;
 }
 .circulo {
-  width: 188px;
-  height: 188px;
+  width: 160px;
+  height: 160px;
   background: linear-gradient(135deg, #fff200, #ffe700, #ffd400);
   border-radius: 200px;
   border: 0px solid #403833;
@@ -159,7 +159,7 @@ const tech = {
 }
 .wrapper {
   width: 200px;
-  padding-top: 160px;
+  padding-top: 130px;
   border-radius: 200px;
   display: flex;
   justify-content: center;
@@ -294,7 +294,7 @@ const tech = {
   }
   .wrapper {
     width: 200px;
-    padding-top: 160px;
+    padding-top: 130px;
     border-radius: 200px;
     display: flex;
     justify-content: center;
