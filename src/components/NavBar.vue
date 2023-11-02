@@ -148,7 +148,7 @@ li {
 }
 
 .a p {
-  width: 200px;
+  width: 160px;
   color: #403833;
   padding-top: 15px;
   display: flex;
@@ -157,15 +157,15 @@ li {
 }
 
 .a:hover p {
-  width: 200px;
-  background: #fff10050;
+  width: 160px;
+  background: #fff100;
   color: #403833;
   padding-top: 15px;
   margin: 0px;
 }
 
 .link-active p {
-  width: 200px;
+  width: 160px;
   background: #fff100;
   color: #403833;
   font-weight: 575;

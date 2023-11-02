@@ -561,10 +561,13 @@ function desactivarHover(mostrarIframe) {
           'card-vertical':
             categoria === 'DiseñoGráfico' || categoria === 'Ilustración',
         }"
-        v-for="(trabajo, index) in trabajosMostrados()"
+        v-for="(trabajo, index) in trabajosMostrados().slice().reverse()"
         :key="index"
       >
-        <h3>{{ trabajo.titulo }}</h3>
+        <h3>
+          {{ trabajo.titulo }}
+          <p>{{ trabajo.ano }}</p>
+        </h3>
         <!-- Imagen muestra -->
         <div>
           <img
@@ -796,7 +799,6 @@ a {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  justify-items: center;
 }
 
 .portfolio-galeria-vertical {
@@ -805,37 +807,60 @@ a {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  justify-items: center;
 }
 
 .card {
-  width: 100%;
+  width: 350px;
+  height: 550px;
+  background: #fff;
+  padding: 15px 15px 30px;
+  box-shadow: 0px 0px 25px -10px #bfbdba;
   overflow: visible;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background: #fff;
 }
 .card h3 {
   width: 100%;
   background: #fff100;
   padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+.card h3 p {
+  padding-right: 15px;
+  font-size: 0.8rem;
+  color: #ccc429;
 }
 
 .card-vertical {
-  width: 100%;
+  width: 350px;
+  height: 550px;
+  background: #fff;
+  padding: 15px 15px 30px;
+  box-shadow: 0px 0px 25px -10px #bfbdba;
   overflow: visible;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background: #fff;
 }
 .card-vertical h3 {
   width: 100%;
   background: #fff100;
   padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+.card-vertical h3 p {
+  padding-right: 15px;
+  font-size: 0.8rem;
+  color: #ccc429;
 }
 .card:hover .card-overlay {
   opacity: 1;
@@ -913,7 +938,7 @@ a {
   letter-spacing: 0.04rem;
 }
 .btn-pdf {
-  margin: 15px 0px;
+  margin: 15px 0px 0px;
   text-align: left;
 }
 @media only screen and (min-width: 768px) {
@@ -928,7 +953,7 @@ a {
     align-items: center;
   }
   .trabajos {
-    width: 600px;
+    width: 90%;
     padding-top: 70px;
     padding-bottom: 100px;
     margin: auto;
@@ -937,7 +962,7 @@ a {
     align-items: center;
   }
   .titulo {
-    width: 100%;
+    width: 600px;
     height: fit-content;
     padding: 23px;
     margin: 0px 0px 30px;
@@ -961,28 +986,26 @@ a {
     font-weight: 200;
   }
   .portfolio-galeria {
-    width: 350px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    justify-items: center;
   }
 
   .portfolio-galeria-vertical {
-    width: 350px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    justify-items: center;
   }
   .btn-categoria p {
     width: 350px;
     padding-top: 15px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 400;
@@ -995,7 +1018,7 @@ a {
   }
   .btn-categoria p:hover {
     width: 350px;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 400;
@@ -1004,25 +1027,38 @@ a {
     padding-top: 15px;
     transition: all 0.5s;
   }
-  .btn-active p {
+  .btn-active {
     width: 350px;
     background: #fff100;
     color: #403833;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 600;
-    padding-top: 15px;
   }
   .card h3 {
     width: 100%;
     background: #fff100;
     padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
   }
   .card-vertical h3 {
     width: 100%;
     background: #fff100;
     padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .card-vertical h3 p {
+    padding-right: 15px;
+    font-size: 0.8rem;
+    color: #ccc429;
   }
 }
 </style>

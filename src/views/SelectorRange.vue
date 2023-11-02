@@ -1488,7 +1488,7 @@ onMounted(() => {
 }
 @media only screen and (max-width: 768px) {
   .fixed {
-    width: 600px;
+    width: 90%;
   }
   .container {
     min-width: 350px;
@@ -1544,7 +1544,7 @@ onMounted(() => {
 }
 @media only screen and (min-width: 768px) {
   .fixed {
-    width: 600px;
+    width: 560px;
   }
   .container {
     max-width: 600px;
@@ -1597,7 +1597,7 @@ onMounted(() => {
 }
 @media only screen and (min-width: 1024px) {
   .fixed {
-    width: 600px;
+    width: 570px;
   }
   .container {
     max-width: 600px;
