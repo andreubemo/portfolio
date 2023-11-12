@@ -148,7 +148,7 @@ li {
 }
 
 .a p {
-  width: 160px;
+  width: 120px;
   color: #403833;
   padding-top: 15px;
   display: flex;
@@ -157,7 +157,7 @@ li {
 }
 
 .a:hover p {
-  width: 160px;
+  width: 120px;
   background: #fff100;
   color: #403833;
   padding-top: 15px;
@@ -165,7 +165,7 @@ li {
 }
 
 .link-active p {
-  width: 160px;
+  width: 120px;
   background: #fff100;
   color: #403833;
   font-weight: 575;
@@ -283,14 +283,14 @@ nav.scrolled-down {
   }
 
   .a p {
-    width: 200px;
+    width: 120px;
     color: #403833;
     padding-top: 15px;
     transition: all 0.5s;
   }
 
   .a:hover p {
-    width: 200px;
+    width: 120px;
     background: #fff10050;
     color: #403833;
     padding-top: 15px;
@@ -298,7 +298,7 @@ nav.scrolled-down {
   }
 
   .link-active p {
-    width: 200px;
+    width: 120px;
     background: #fff100;
     color: #403833;
     font-weight: 600;

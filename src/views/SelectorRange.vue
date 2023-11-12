@@ -14,6 +14,8 @@ import tech09 from "@/assets/img/css.png";
 import tech10 from "@/assets/img/javascript.png";
 import tech11 from "@/assets/img/visualstudiocode.png";
 import tech12 from "@/assets/img/vue.png";
+import tech13 from "@/assets/img/react.png";
+import tech14 from "@/assets/img/tailwind.png";
 import steveJobs from "@/assets/img/steve-jobs.jpeg";
 
 //CONTENIDO VIDALABORAL
@@ -848,7 +850,7 @@ const cvAndreu = ref([
     cargo: "Diseñador UX/UI y soporte en taller de serigrafía",
     empresa: "GLOBAL MANAGING S.L.U.",
     descripcion:
-      "La pandemia afectó a las empresas, pero tuve la suerte de ser contratado por Global Managing para liderar el proyecto de ecommerce.",
+      "En Global Managing SL me encargué de llevar a cabo la tienda online de la empresa, des del diseño UX, hasta la interfaz de usuario y la maquetación de la tienda online con Woocommerce de Wordpress",
     formacion: "CFGS - Gráfica Publicitaria",
     centro: "Escola Municipal d'Art i Disseny de la Garriga (EMAD)",
     curso: "2017-2018",
@@ -921,7 +923,7 @@ const cvAndreu = ref([
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
     hSkills04: "Diseño web",
     hSkTools04:
-      "Mis herramientas como diseñador UX/UI, Javascript(Vue3), Figma.",
+      "Mis herramientas como diseñador UX/UI y frontend developer.",
   },
 ]);
 
@@ -939,6 +941,8 @@ const tech = {
   javascript: tech10,
   vsc: tech11,
   vue: tech12,
+  react: tech13,
+  tailwind: tech14,
 };
 
 //VALOR INPUT ToolsE
@@ -1010,6 +1014,7 @@ function handleScroll() {
 
 const isFixed = ref(null);
 
+console.log(isFixed.value)
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
@@ -1019,8 +1024,8 @@ onMounted(() => {
   <div class="container">
     <portada />
     <div class="range">
-      <h1>currículum</h1>
-      <p>desliza para ver el contenido de cada año</p>
+      <h1 v-if="!isFixed">currículum</h1>
+      <p v-if="!isFixed">desliza para ver el contenido de cada año</p>
       <h2>{{ year.info.value }}</h2>
       <input
         class="select"
@@ -1174,6 +1179,8 @@ onMounted(() => {
               <img :src="tech.javascript" alt="javascript" />
               <img :src="tech.vsc" alt="vsc" />
               <img :src="tech.vue" alt="vue" />
+              <img :src="tech.react" alt="vue" />
+              <img :src="tech.tailwind" alt="vue" />
             </div>
           </div>
         </div>
@@ -1292,13 +1299,16 @@ onMounted(() => {
   padding-top: 15px;
 }
 .tools {
+  width: 100%;
+  padding: 15px 0px;
   display: flex;
   flex-wrap: wrap;
   gap: 21px;
 }
 
 .tools img {
-  height: 30px;
+  width: 30px;
+  object-fit: contain;
 }
 
 .items-skills {
@@ -1438,6 +1448,14 @@ onMounted(() => {
   gap: 15px;
   padding: 15px 0px 30px;
 }
+.range h1 {
+  opacity: 1;
+}
+.oculto {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+
 .select:focus {
   outline: none;
 }
@@ -1488,7 +1506,7 @@ onMounted(() => {
 }
 @media only screen and (max-width: 768px) {
   .fixed {
-    width: 90%;
+    width: 97%;
   }
   .container {
     min-width: 350px;
