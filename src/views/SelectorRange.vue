@@ -948,11 +948,6 @@ const tech = {
 //VALOR INPUT ToolsE
 const valorSelect = ref(22);
 
-//CAMBIAR VALOR INPUT CON BOTON
-const clickYear = (yearId) => {
-  valorSelect.value = yearId;
-};
-
 //boton para mostrar contenido del array de objetos cvAndreu
 
 const mostrarInfo = (propiedad, defaultValue) => {
@@ -996,6 +991,8 @@ const hSkTools03 = mostrarInfo("hSkTools03", "");
 const hSkills04 = mostrarInfo("hSkills04", "");
 const hSkTools04 = mostrarInfo("hSkTools04", "");
 
+const isFixed = ref(null);
+
 function handleScroll() {
   const scrollTop = window.scrollY;
   const range = document.querySelector(".range");
@@ -1005,16 +1002,16 @@ function handleScroll() {
     isFixed.value = true;
     range.classList.add("fixed");
     contenido.classList.add("espacio-contenido");
+    range.classList.add("display-none");
   } else {
     isFixed.value = false;
     range.classList.remove("fixed");
     contenido.classList.remove("espacio-contenido");
+    range.classList.remove("display-none");
   }
 }
 
-const isFixed = ref(null);
 
-console.log(isFixed.value)
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
@@ -1198,6 +1195,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.display-none{
+  display: none;
+  transition: 900ms all;
+}
 .espacio-contenido {
   margin-top: 220px;
 }
@@ -1213,6 +1214,14 @@ onMounted(() => {
   position: fixed;
   top: 70px;
   z-index: 500;
+}
+@keyframes desaparecer {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
 .container {
   width: 100%;

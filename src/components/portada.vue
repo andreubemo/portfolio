@@ -13,7 +13,7 @@ import tech11 from "@/assets/img/visualstudiocode.png";
 import tech12 from "@/assets/img/vue.png";
 import tech13 from "@/assets/img/react.png";
 import logoEsdeveniments from "@/assets/img/logo-esdeveniments.png";
-import fotoPerfil from "@/assets/img/andreu-bemo.png";
+import fotoPerfil from "@/assets/img/andreubemo-fotoperfil.png";
 //CONTENIDO TECH
 const tech = {
   photoshop: tech01,
@@ -21,7 +21,7 @@ const tech = {
   indesign: tech03,
   aftereffects: tech04,
   premiere: tech05,
-  figma: tech06,
+figma: tech06,
   wordpress: tech07,
   vsc: tech11,
   html: tech08,
@@ -35,17 +35,13 @@ const tech = {
 <template>
   <div class="container">
     <div class="card">
-      <!-- <div class="title">
-        <h1>andreu benítez</h1>
-        <h2>diseñador UX/UI</h2>
-      </div> -->
       <div class="wrapper">
         <img :src="fotoPerfil" alt="andreu-benitez" class="profile-image" />
         <div class="circulo"></div>
       </div>
       <div class="character">
         <h1>andreu benítez</h1>
-        <h2>diseñador UX/UI</h2>
+        <h2>diseñador UX/UI<br>junior frontend developer</h2>
         <div class="descripcion">
           <p>
             - <span>diseñador de producto digital (UX/UI)</span>
@@ -54,11 +50,11 @@ const tech = {
           <p>- <span>5 años de experiencia</span> como diseñador gráfico.</p>
           <p>- <span>3 años de experiencia</span> como diseñador UX/UI</p>
           <p>
-            - <span>1 año de experiencia</span> en entornos Javascript (React y
-            Vue.js)
+            - <span>1 año de experiencia</span> trabajando con frameworks modernos Javascript (React y
+            Vue.js) y maquetando con Css y Tailwindcss.
           </p>
           <p>
-            - <span>actualmente</span> estoy desarrollando esdeveniments.cat
+            - <span>actualmente</span> estoy maquetando y desarrollando esdeveniments.cat
           </p>
         </div>
         <div class="footer-card">
