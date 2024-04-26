@@ -732,7 +732,6 @@ function desactivarHover(mostrarIframe) {
 .btn-categoria p {
   width: 200px;
   font-weight: 350;
-  color: #403833;
   padding-top: 15px;
   display: flex;
   flex-direction: column;
@@ -744,7 +743,6 @@ function desactivarHover(mostrarIframe) {
 .btn-categoria:hover p {
   width: 200px;
   background: #fff100;
-  color: #403833;
   font-weight: 350;
   padding-top: 15px;
   margin: 0px;
@@ -753,7 +751,6 @@ function desactivarHover(mostrarIframe) {
 .btn-active p {
   width: 200px;
   background: #fff100;
-  color: #403833;
   font-weight: 575;
   padding-top: 15px;
   margin: 0px;
@@ -783,13 +780,11 @@ a {
 
 .titulo h1 {
   width: 100%;
-  color: #403833;
 }
 
 .desc-seccion {
   width: 100%;
   padding: 15px 0px 0px;
-  color: #403833;
   letter-spacing: 0.08rem;
 }
 
@@ -906,13 +901,11 @@ a {
 
 .card-text h3 {
   background: #fff100;
-  color: #403833;
   padding-top: 15px;
   letter-spacing: 0.04rem;
 }
 
 .card-text p {
-  color: #403833;
   letter-spacing: 0.04rem;
   padding: 0px 23px;
 }
@@ -928,13 +921,11 @@ a {
 
 .card-text-vertical h3 {
   background: #fff100;
-  color: #403833;
   padding-top: 15px;
   letter-spacing: 0.04rem;
 }
 
 .card-text-vertical p {
-  color: #403833;
   letter-spacing: 0.04rem;
 }
 .btn-pdf {
@@ -1009,7 +1000,6 @@ a {
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 400;
-    color: #403833;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1023,14 +1013,12 @@ a {
     line-height: 1.9rem;
     font-weight: 400;
     background: #fff10050;
-    color: #403833;
     padding-top: 15px;
     transition: all 0.5s;
   }
   .btn-active {
     width: 350px;
     background: #fff100;
-    color: #403833;
     font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;

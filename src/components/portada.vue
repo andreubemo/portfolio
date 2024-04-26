@@ -13,7 +13,7 @@ import tech11 from "@/assets/img/visualstudiocode.png";
 import tech12 from "@/assets/img/vue.png";
 import tech13 from "@/assets/img/react.png";
 import logoEsdeveniments from "@/assets/img/logo-esdeveniments.png";
-import fotoPerfil from "@/assets/img/andreubemo-fotoperfil.png";
+import fotoPerfil from "@/assets/img/foto-perfil-instagram-.webp";
 //CONTENIDO TECH
 const tech = {
   photoshop: tech01,
@@ -21,7 +21,7 @@ const tech = {
   indesign: tech03,
   aftereffects: tech04,
   premiere: tech05,
-figma: tech06,
+  figma: tech06,
   wordpress: tech07,
   vsc: tech11,
   html: tech08,
@@ -40,22 +40,39 @@ figma: tech06,
         <div class="circulo"></div>
       </div>
       <div class="character">
-        <h1>andreu benítez</h1>
-        <h2>diseñador UX/UI<br>junior frontend developer</h2>
+        <h2>andreu benítez</h2>
+        <h1>Diseñador gráfico UX/UI</h1>
         <div class="descripcion">
           <p>
-            - <span>diseñador de producto digital (UX/UI)</span>
-            | Javascript | Especializado en branding y tipografía web
+            <span>Diseñador gráfico web (UX/UI)</span><br />
+            React, Vue.js | Css, Tailwind | Wordpress
           </p>
-          <p>- <span>5 años de experiencia</span> como diseñador gráfico.</p>
-          <p>- <span>3 años de experiencia</span> como diseñador UX/UI</p>
-          <p>
-            - <span>1 año de experiencia</span> trabajando con frameworks modernos Javascript (React y
-            Vue.js) y maquetando con Css y Tailwindcss.
-          </p>
-          <p>
-            - <span>actualmente</span> estoy maquetando y desarrollando esdeveniments.cat
-          </p>
+          <ul>
+            <li>
+              <span>5 años de experiencia como diseñador gráfico.</span>
+            </li>
+            <li>
+              <span
+                >3 años de experiencia en Wordpress como diseñador UX/UI</span
+              >
+            </li>
+            <li>
+              <span
+                >2 año de experiencia con React y Vue.js y maquetando con Css y
+                Tailwindcss.</span
+              >
+            </li>
+            <li>
+              Actualmente estoy maquetando y desarrollando
+              <a
+                class="esdeveniments"
+                href="https://www.esdeveniments.cat/"
+                alt="esdeveniments-cat"
+                target="_blank"
+                >esdeveniments.cat</a
+              >
+            </li>
+          </ul>
         </div>
         <div class="footer-card">
           <a
@@ -69,39 +86,25 @@ figma: tech06,
               <p>esdeveniments.cat</p>
             </div>
           </a>
-          <ul class="rrss">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/andreubenitezmoreno/"
-                target="_blank"
-                ><img src="@/assets/img/linkedin.png" alt="linkedin"
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/andreubemo/portfolio" target="_blank"
-                ><img src="@/assets/img/github.png" alt="github"
-              /></a>
-            </li>
-            <!-- <li>
+          <div class="rrss">
             <a
-              href="https://open.spotify.com/user/andreubenitez?si=e2d9a3c3a9344668"
+              href="https://www.linkedin.com/in/andreubenitezmoreno/"
               target="_blank"
-              ><img src="@/assets/img/spotify.png" alt="spotify"
+              ><img src="@/assets/img/linkedin.png" alt="linkedin"
             /></a>
-          </li> -->
-          </ul>
-        </div>
-        <!-- <div class="tools">
-          <h3>herramientas</h3>
-          <div class="tech-icons">
-            <img
-              v-for="(techItem, index) in tech"
-              :key="index"
-              :src="techItem"
-              alt="Icono de tecnología"
-            />
+            <a href="https://github.com/andreubemo/portfolio" target="_blank"
+              ><img src="@/assets/img/github.png" alt="github"
+            /></a>
           </div>
-        </div> -->
+        </div>
+        <div class="tech-icons">
+          <img
+            v-for="(techItem, index) in tech"
+            :key="index"
+            :src="techItem"
+            alt="Icono de tecnología"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -110,7 +113,6 @@ figma: tech06,
 <style scoped>
 .container {
   width: 100%;
-  height: 100vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -119,7 +121,6 @@ figma: tech06,
 }
 .card {
   width: 100%;
-  height: 550px;
   margin: 0px 15px;
   padding: 0px 15px;
   display: flex;
@@ -136,11 +137,11 @@ figma: tech06,
   z-index: 1;
 }
 .circulo {
-  width: 160px;
-  height: 160px;
-  background: linear-gradient(135deg, #fff200, #ffe700, #ffd400);
+  width: 155px;
+  height: 155px;
+  background: linear-gradient(135deg, #fff200, #ffe700, #ffb700);
   border-radius: 200px;
-  border: 0px solid #403833;
+  border: 0px solid #332f18;
   position: absolute;
   z-index: 0;
   animation: profile 2s ease-in-out infinite;
@@ -155,17 +156,19 @@ figma: tech06,
 }
 .wrapper {
   width: 200px;
-  padding-top: 130px;
+  margin-top: 130px;
   border-radius: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
+  position: relative;
+  left: -90px;
 }
 .character {
   background: #fff;
   width: 100%;
-  padding: 100px 23px 23px;
+  padding: 60px 23px 23px;
   margin-top: 0px;
   box-shadow: 0px 0px 60px -25px #bfbdba;
   display: flex;
@@ -175,14 +178,14 @@ figma: tech06,
   opacity: 1;
   transition: all 0.3s;
 }
-.character h1 {
-  width: 100%;
-}
 .character h2 {
+  width: 100%;
+  text-align: right;
+}
+.character h1 {
   width: 100%;
   padding-top: 15px;
   background: #fff100;
-  color: #403833;
 }
 .descripcion {
   width: 100%;
@@ -202,36 +205,30 @@ figma: tech06,
   margin: 0px;
 }
 .rrss {
-  width: 45%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 25px;
+  gap: 16px;
   list-style: none;
   margin-right: 10px;
 }
-
-.rrss li {
-  width: fit-content;
-  text-align: center;
-}
-
-.rrss li img {
+.rrss img {
   width: 29px;
   filter: grayscale(1);
   transition: 0.3s ease;
 }
 
-.rrss li img:hover {
+.rrss img:hover {
   filter: none;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
-.rrss li a img {
+.rrss a img {
   filter: grayscale(100%);
 }
 .esdeveniments {
-  width: 45%;
+  width: 50%;
   padding: 0px 0px 0px;
   display: flex;
   justify-content: flex-start;
@@ -263,6 +260,15 @@ figma: tech06,
   justify-content: space-between;
   align-items: center;
 }
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+.tech-icons img {
+  height: 25px;
+}
 @media only screen and (max-width: 768px) {
   .container {
     min-width: 350px;
@@ -270,7 +276,7 @@ figma: tech06,
   }
   .wrapper {
     width: 200px;
-    padding-top: 160px;
+    padding-top: 50px;
     border-radius: 200px;
     display: flex;
     justify-content: center;

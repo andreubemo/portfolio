@@ -14,7 +14,7 @@
   align-items: center;
   height: 62px;
   background: #fff;
-  color: #403833;
+  color: #332f18;
 }
 .container span {
   width: 90%;

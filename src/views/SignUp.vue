@@ -177,7 +177,6 @@ function submitForm() {
 .titulo span {
   width: 100%;
   padding: 0px 0px 0px;
-  color: #403833;
   letter-spacing: 0.06rem;
 }
 
@@ -210,7 +209,6 @@ function submitForm() {
   width: 100%;
   text-align: center;
   transition: 0.3s ease;
-  color: #403833;
   font-size: 15px;
 }
 
@@ -225,7 +223,6 @@ function submitForm() {
 label {
   width: 200px;
   background: #fff100;
-  color: #403833;
   margin: 0px;
   padding: 15px 0px 0px;
 }
@@ -256,7 +253,6 @@ button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: #403833;
   border: 0px;
 }
 
@@ -294,12 +290,11 @@ input[type="checkbox"] {
 }
 .legal {
   padding: 0px 0px 125px;
-  color: #403833;
   font-size: 0.7rem;
 }
 /* Estilo para cuando el input está seleccionado */
 input[type="checkbox"]:checked {
-  border: 1px solid #403833;
+  border: 1px solid #332f18;
 }
 
 @media only screen and (max-width: 768px) {

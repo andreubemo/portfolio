@@ -922,8 +922,7 @@ const cvAndreu = ref([
     hSkTools03:
       "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
     hSkills04: "Diseño web",
-    hSkTools04:
-      "Mis herramientas como diseñador UX/UI y frontend developer.",
+    hSkTools04: "Mis herramientas como diseñador UX/UI y frontend developer.",
   },
 ]);
 
@@ -1010,7 +1009,6 @@ function handleScroll() {
     range.classList.remove("display-none");
   }
 }
-
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
@@ -1195,7 +1193,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.display-none{
+.display-none {
   display: none;
   transition: 900ms all;
 }
@@ -1327,7 +1325,6 @@ onMounted(() => {
   justify-content: center;
   gap: 23px;
   text-align: left;
-  color: #403833;
 }
 
 .card-skill {
@@ -1335,8 +1332,7 @@ onMounted(() => {
   max-width: 381px;
   width: 100%;
   height: 200px;
-  background: #403833;
-  color: #403833;
+  background: #332f18;
   padding: 15px;
   border-radius: 15px;
   display: flex;
@@ -1359,17 +1355,16 @@ onMounted(() => {
   flex-direction: column;
   gap: 15px;
   text-align: left;
-  color: #403833;
 }
 
 .items h3 {
   padding-bottom: 15px;
-  border-bottom: 1px solid #403833;
+  border-bottom: 1px solid #332f18;
 }
 
 .items h2 {
   padding-bottom: 15px;
-  border-bottom: 1px solid #403833;
+  border-bottom: 1px solid #332f18;
 }
 .items-vidalaboral {
   width: 300px;
@@ -1377,7 +1372,6 @@ onMounted(() => {
   flex-direction: column;
   gap: 5px;
   text-align: left;
-  color: #403833;
 }
 .items-vidalaboral span {
   display: flex;
@@ -1408,7 +1402,6 @@ onMounted(() => {
   flex-direction: column;
   gap: 15px;
   text-align: left;
-  color: #403833;
 }
 
 .cita {
@@ -1428,7 +1421,7 @@ onMounted(() => {
 }
 .cita img {
   width: 100px;
-  border: 3px solid #403833;
+  border: 3px solid #332f18;
   border-radius: 50px;
   padding: 4px;
   margin: auto;
@@ -1436,14 +1429,12 @@ onMounted(() => {
 }
 .titulo {
   width: 100%;
-  color: #403833;
   display: flex;
   flex-direction: column;
 }
 
 .titulo h2 {
   background: #fff100;
-  color: #403833;
   padding-top: 15px;
 }
 
@@ -1461,9 +1452,9 @@ onMounted(() => {
   opacity: 1;
 }
 .oculto {
-    opacity: 0;
-    transition: opacity 500ms ease-in-out;
-  }
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
 
 .select:focus {
   outline: none;
@@ -1487,7 +1478,7 @@ onMounted(() => {
 
 /*SELECTOR INPUT RANGE*/
 .select::-webkit-slider-thumb {
-  background-color: #403833;
+  background-color: #332f18;
   width: 15px;
   height: 15px;
   margin: -6px 0px;
@@ -1502,7 +1493,7 @@ onMounted(() => {
 
 /*BARRA RANGE INPUT RANGE*/
 .select::-webkit-slider-runnable-track {
-  background-color: #403833;
+  background-color: #332f18;
   height: 2px;
   margin: 10px 10px;
   padding: 0px 0px;
