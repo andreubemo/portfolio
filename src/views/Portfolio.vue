@@ -711,7 +711,6 @@ function desactivarHover(mostrarIframe) {
 <style scoped>
 .portfolio {
   width: 100%;
-  height: 100vh;
   padding: 50px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -720,17 +719,17 @@ function desactivarHover(mostrarIframe) {
 }
 
 .btn-portfolio {
-  width: 100%;
-  padding: 0px;
+  padding-top: 62px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 35px;
 }
-
+.btn-portfolio a {
+  text-decoration: none;
+}
 .btn-categoria p {
-  width: 200px;
   font-weight: 350;
   padding-top: 15px;
   display: flex;
@@ -741,7 +740,6 @@ function desactivarHover(mostrarIframe) {
 }
 
 .btn-categoria:hover p {
-  width: 200px;
   background: #fff100;
   font-weight: 350;
   padding-top: 15px;
@@ -749,7 +747,6 @@ function desactivarHover(mostrarIframe) {
 }
 
 .btn-active p {
-  width: 200px;
   background: #fff100;
   font-weight: 575;
   padding-top: 15px;
@@ -760,7 +757,7 @@ a {
 }
 .trabajos {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 62px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -935,7 +932,6 @@ a {
 @media only screen and (min-width: 768px) {
   .portfolio {
     max-width: 600px;
-    height: 100vh;
     margin: auto;
     padding: 50px 0px 0px;
     display: flex;
@@ -966,15 +962,18 @@ a {
   .btn-portfolio {
     width: 100%;
     font-weight: 200;
-    padding: 0px;
+    padding-top: 62px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
   }
   .btn-portfolio p {
     font-weight: 200;
+  }
+  .btn-portfolio a {
+    text-decoration: none;
   }
   .portfolio-galeria {
     width: 100%;
@@ -994,9 +993,7 @@ a {
     align-items: center;
   }
   .btn-categoria p {
-    width: 350px;
     padding-top: 15px;
-    font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 400;
@@ -1007,8 +1004,6 @@ a {
     transition: all 0.5s;
   }
   .btn-categoria p:hover {
-    width: 350px;
-    font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 400;
@@ -1017,9 +1012,7 @@ a {
     transition: all 0.5s;
   }
   .btn-active {
-    width: 350px;
     background: #fff100;
-    font-size: 1.3rem;
     letter-spacing: 0.02rem;
     line-height: 1.9rem;
     font-weight: 600;
