@@ -113,7 +113,7 @@ const tech = {
 <style scoped>
 .container {
   width: 100%;
-  margin: auto;
+  margin: 82px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,8 +271,12 @@ const tech = {
 }
 @media only screen and (max-width: 768px) {
   .container {
-    min-width: 350px;
-    max-width: 600px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .wrapper {
     width: 200px;
@@ -287,7 +291,6 @@ const tech = {
 @media only screen and (min-width: 768px) {
   .container {
     width: 600px;
-    height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
