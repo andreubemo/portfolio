@@ -78,27 +78,21 @@ function submitForm() {
       <p>andreu benítez</p>
       <span>600363140</span>
       <span>andreu.bemo@gmail.com</span>
-      <ul class="rrss">
-        <li>
-          <a href="https://www.linkedin.com/in/andreu-bemo/" target="_blank"
-            ><img src="@/assets/img/linkedin.png" alt="linkedin"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/andreubemo/portfolio/tree/master"
-            target="_blank"
-            ><img src="@/assets/img/github.png" alt="github"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://open.spotify.com/user/andreubenitez?si=e2d9a3c3a9344668"
-            target="_blank"
-            ><img src="@/assets/img/spotify.png" alt="spotify"
-          /></a>
-        </li>
-      </ul>
+      <div class="rrss">
+        <a href="https://www.linkedin.com/in/andreu-bemo/" target="_blank"
+          ><img src="@/assets/img/linkedin.png" alt="linkedin"
+        /></a>
+        <a
+          href="https://github.com/andreubemo/portfolio/tree/master"
+          target="_blank"
+          ><img src="@/assets/img/github.png" alt="github"
+        /></a>
+        <a
+          href="https://open.spotify.com/user/andreubenitez?si=e2d9a3c3a9344668"
+          target="_blank"
+          ><img src="@/assets/img/spotify.png" alt="spotify"
+        /></a>
+      </div>
     </div>
     <form class="form">
       <label for="name">nombre</label>
@@ -181,35 +175,27 @@ function submitForm() {
 }
 
 .rrss {
-  width: 100%;
   padding: 7px 0px 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 16px;
   list-style: none;
 }
 
-.rrss li {
+.rrss a {
   text-align: center;
 }
 
-.rrss li img {
+.rrss a img {
   width: 29px;
   filter: grayscale(1);
   transition: 0.3s ease;
 }
 
-.rrss li img:hover {
+.rrss a img:hover {
   filter: none;
   transform: scale(1.3);
-}
-
-.rrss li p {
-  width: 100%;
-  text-align: center;
-  transition: 0.3s ease;
-  font-size: 15px;
 }
 
 .form {
@@ -295,22 +281,5 @@ input[type="checkbox"] {
 /* Estilo para cuando el input está seleccionado */
 input[type="checkbox"]:checked {
   border: 1px solid #332f18;
-}
-
-@media only screen and (max-width: 768px) {
-  .general {
-    min-width: 350px;
-    max-width: 600px;
-    padding: 100px 23px 0px;
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .general {
-    max-width: 600px;
-    padding: 100px 23px 0px;
-    margin: auto;
-  }
 }
 </style>

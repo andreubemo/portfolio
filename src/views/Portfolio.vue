@@ -71,6 +71,8 @@ import mock27 from "@/assets/img/mockup-analitico.png";
 import mock28 from "@/assets/img/mockup-mapping.png";
 import mock29 from "@/assets/img/mockup-tampax.png";
 import mock30 from "@/assets/img/mockup-k66.png";
+import mock32 from "@/assets/img/mockup-marketwow-01.png";
+import mock33 from "@/assets/img/mockup-marketwow-02.png";
 
 const descripcionSecciones = ref([
   {
@@ -422,12 +424,20 @@ const Audiovisual = ref([
   {
     id: 7,
     categoria: "Audiovisual",
-    url: "https://player.vimeo.com/video/419561603?h=812acadb52autoplay=1&muted=1",
-    titulo: "tipografía k66",
-    descripcion:
-      "Este es el test que hize para mi primera tipografía. En la sección Tipografiía de mi portfolio podréis descargarla.",
-    ano: 2019,
-    mockup: mock30,
+    url: "https://www.instagram.com/p/C6hFC0QtGrn/",
+    titulo: "Reel marketwow.es",
+    descripcion: "Reels para Instagram de la cuenta marketwow.es.",
+    ano: 2024,
+    mockup: mock32,
+  },
+  {
+    id: 8,
+    categoria: "Audiovisual",
+    url: "https://www.instagram.com/reel/C1FTmazIUWS/",
+    titulo: "Reel promocionado marketwow.es",
+    descripcion: "Reels para Instagram de la cuenta marketwow.es.",
+    ano: 2024,
+    mockup: mock33,
   },
 ]);
 
@@ -623,7 +633,7 @@ function desactivarHover(mostrarIframe) {
           </button>
           <button v-show="trabajo.url" class="btn-pdf">
             <a :href="trabajo.url" target="_blank" rel="noopener noreferrer"
-              >Vimeo</a
+              >Ver</a
             >
           </button>
         </div>

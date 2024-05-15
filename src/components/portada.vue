@@ -13,6 +13,7 @@ import tech11 from "@/assets/img/visualstudiocode.png";
 import tech12 from "@/assets/img/vue.png";
 import tech13 from "@/assets/img/react.png";
 import logoEsdeveniments from "@/assets/img/logo-esdeveniments.png";
+import logoMarketwow from "@/assets/img/logo-marketwow.png";
 import fotoPerfil from "@/assets/img/foto-perfil-instagram-.webp";
 //CONTENIDO TECH
 const tech = {
@@ -40,8 +41,8 @@ const tech = {
         <div class="circulo"></div>
       </div>
       <div class="character">
-        <h2>andreu benítez</h2>
-        <h1>Diseñador gráfico UX/UI</h1>
+        <h2>Andreu Benítez</h2>
+        <h1>Diseñador gráfico web | Marqueting digital</h1>
         <div class="descripcion">
           <p>
             <span>Diseñador gráfico web (UX/UI)</span><br />
@@ -62,16 +63,18 @@ const tech = {
                 Tailwindcss.</span
               >
             </li>
-            <li>
-              Actualmente estoy maquetando y desarrollando
+
+            <li class="rrss">
               <a
-                class="esdeveniments"
-                href="https://www.esdeveniments.cat/"
-                alt="esdeveniments-cat"
+                href="https://www.linkedin.com/in/andreubenitezmoreno/"
                 target="_blank"
-                >esdeveniments.cat</a
-              >
+                ><img src="@/assets/img/linkedin.png" alt="linkedin"
+              /></a>
+              <a href="https://github.com/andreubemo/portfolio" target="_blank"
+                ><img src="@/assets/img/github.png" alt="github"
+              /></a>
             </li>
+            <li>Actualmente soy cofundador en dos proyectos:</li>
           </ul>
         </div>
         <div class="footer-card">
@@ -83,19 +86,18 @@ const tech = {
           >
             <div class="info-esde">
               <img :src="logoEsdeveniments" alt="logo-esdeveniments" />
-              <p>esdeveniments.cat</p>
             </div>
           </a>
-          <div class="rrss">
-            <a
-              href="https://www.linkedin.com/in/andreubenitezmoreno/"
-              target="_blank"
-              ><img src="@/assets/img/linkedin.png" alt="linkedin"
-            /></a>
-            <a href="https://github.com/andreubemo/portfolio" target="_blank"
-              ><img src="@/assets/img/github.png" alt="github"
-            /></a>
-          </div>
+          <a
+            class="esdeveniments"
+            href="https://www.marketwow.es/"
+            alt="m,arketwow-es"
+            target="_blank"
+          >
+            <div class="info-esde">
+              <img :src="logoMarketwow" alt="logo-marketwow" />
+            </div>
+          </a>
         </div>
         <div class="tech-icons">
           <img
@@ -156,14 +158,13 @@ const tech = {
 }
 .wrapper {
   width: 200px;
-  margin-top: 130px;
+  padding-bottom: 32px;
+  margin-top: 100px;
   border-radius: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s;
-  position: relative;
-  left: -90px;
 }
 .character {
   background: #fff;
@@ -205,13 +206,12 @@ const tech = {
   margin: 0px;
 }
 .rrss {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
   align-items: center;
   gap: 16px;
   list-style: none;
-  margin-right: 10px;
 }
 .rrss img {
   width: 29px;
@@ -229,45 +229,38 @@ const tech = {
 }
 .esdeveniments {
   width: 50%;
-  padding: 0px 0px 0px;
+  height: 32px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .info-esde {
-  width: 100%;
-  padding: 5px 0px;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 5px;
-}
-.info-esde p {
-  width: 100%;
-  background: #fff;
-  text-align: center;
-  padding-bottom: 15px;
+  justify-content: center;
+  align-items: center;
 }
 .info-esde img {
-  width: 250px;
-  padding: 15px 0px 0px;
+  width: 100%;
   object-fit: contain;
 }
 .footer-card {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .tech-icons {
+  width: 100%;
+  padding: 32px 0px 0px;
   display: flex;
+  justify-content: start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  width: 100%;
 }
 .tech-icons img {
-  height: 25px;
+  height: 29px;
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -279,12 +272,25 @@ const tech = {
     align-items: center;
   }
   .wrapper {
-    width: 200px;
+    width: 100%;
     padding-top: 50px;
     border-radius: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+  }
+  .character {
+    background: #fff;
+    width: 100%;
+    padding: 80px 23px 23px;
+    margin-top: 0px;
+    box-shadow: 0px 0px 60px -25px #bfbdba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
     transition: all 0.3s;
   }
 }
@@ -298,8 +304,8 @@ const tech = {
     align-items: center;
   }
   .wrapper {
-    width: 200px;
-    padding-top: 130px;
+    width: 100%;
+    padding-top: 60px;
     border-radius: 200px;
     display: flex;
     justify-content: center;

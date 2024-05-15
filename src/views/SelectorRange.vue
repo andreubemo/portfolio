@@ -887,12 +887,54 @@ const cvAndreu = ref([
     diseñador: "Después",
     año: "2023",
     añoMin: "|",
-    hasta: "hoy",
+    hasta: "Hoy",
     duracion: "trabajando",
-    cargo: "Diseñador UX/UI",
+    cargo: "Cofundador | UI engineer | Marqueting digital",
     empresa: "www.esdeveniments.cat",
     descripcion:
-      "Diseñador UX/UI con experiencia en equipos de diseño de empresas tecnológicas. Actualmente trabajo como autónomo en pequeños proyectos reales, pero busco unirme a un equipo para colaborar en desafíos del diseño digital y crear experiencias visuales impactantes. Soy un diseñador gráfico Frontend creativo y resolutivo.",
+      "Mi compañero (Albert Olivé | Senior Web3 Full Stack Engineer) y yo fundamos esdeveniments.cat. Una iniciativa ciudadana para ver de manera fácil y rápida todos los actos culturales que se hacen en Cataluña. Yo me encargué de la estratégie de marketing y del diseño de la interfaz de usuario usando React y Tailwindcss.",
+    formacion: "Curso de especialización - Frontend web developer",
+    centro: "Universitat Autónoma de Barcelona",
+    curso: "2022-2023",
+    nota: "7",
+    sSkills01: "Aprendizaje activo",
+    sSkDesc01:
+      "Estoy comprometido con el aprendizaje continuo y el desarrollo de nuevas habilidades.",
+    sSkills02: "Análsis y resolución de problemas",
+    sSkDesc02:
+      "Poseo habilidades de análisis y resolución de problemas que me permiten gestionar los cambios de manera eficaz.",
+    sSkills03: "Flexibilidd y resiliencia",
+    sSkDesc03:
+      "Mi capacidad para detectar limitaciones y problemas de plazos me permite ser resolutivo y adaptar las soluciones al entorno de trabajo.",
+    sSkills04: "Gestión del cambio",
+    sSkDesc04:
+      "El cambio es un elemento inevitable de la vida, y es una oportunidad para aprender y crecer.",
+    sSkills05: "Inteligencia emocional y empatía",
+    sSkDesc05:
+      "Mi experiencia en el mundo laboral y personal me ha demostrado que el trabajo en equipo es esencial para el éxito de cualquier proyecto. Soy capaz de trabajar de forma colaborativa con otros para alcanzar objetivos comunes, compartiendo ideas y conocimientos, y resolviendo problemas de manera eficaz.",
+    hSkills01: "Diseño gráfico",
+    hSkTools01:
+      "Adobe Creative Suite, ilustración, tipografía, fotografía y audiovisuales.",
+    hSkills02: "Logística",
+    hSkTools02:
+      "El orden y la indexación de productos, estocaje y gestión del equipo.",
+    hSkills03: "Estandarizar procesos de producción",
+    hSkTools03:
+      "Optimizar y contabilizar en timings los procesos para rentabilizar los proyectos.",
+    hSkills04: "Diseño web",
+    hSkTools04: "Mis herramientas como diseñador UX/UI y frontend developer.",
+  },
+  {
+    id: 23,
+    diseñador: "Después",
+    año: "2024",
+    añoMin: "|",
+    hasta: "Hoy",
+    duracion: "trabajando",
+    cargo: "Cofundador | UI engineer | Marqueting digital",
+    empresa: "www.marketwow.es y www.esdeveniments.cat",
+    descripcion:
+      "Mi compañero (Alex Infante | Ingeniero, diseñador de producto y director técnico) y yo fundamos marketwow.es. Una empresa de mobiliario a medida. Yo me encargué de la estratégie de marketing y del diseño de la aplicación web con Wordpress. Sigo trabajando en esdeveniments.cat Diseñando la interfaz de usuario de nuevas funcionalidades y poniendo en marxa la estrategia de marqueting.",
     formacion: "Curso de especialización - Frontend web developer",
     centro: "Universitat Autónoma de Barcelona",
     curso: "2022-2023",
@@ -945,12 +987,12 @@ const tech = {
 };
 
 //VALOR INPUT ToolsE
-const valorSelect = ref(22);
+const valorSelect = ref(23);
 
 //boton para mostrar contenido del array de objetos cvAndreu
 
 const mostrarInfo = (propiedad, defaultValue) => {
-  const info = ref(cvAndreu.value[22][propiedad] || defaultValue);
+  const info = ref(cvAndreu.value[23][propiedad] || defaultValue);
   const mostrar = () => {
     info.value = cvAndreu.value[valorSelect.value][propiedad] || defaultValue;
   };
